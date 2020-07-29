@@ -1,0 +1,110 @@
+@charset "utf-8";
+/* golf.best */
+.golf-wrap.golf .gmt.best{position:relative; padding:40px 0px;}
+
+.golf-wrap.golf .gmt.best .title{font-size:24px; color:#222; font-weight:600; text-align:center; line-height:120%; margin-bottom:20px; font-family:'NanumSquare', sans-serif;}
+.golf-wrap.golf .gmt.best .title strong{color:#70b539; font-weight:600;}
+
+.golf-wrap.golf .gmt.best .tabs{margin-bottom:22px; text-align:center; font-size:0px;}
+.golf-wrap.golf .gmt.best .tabs li{position:relative; display:inline-block;}
+.golf-wrap.golf .gmt.best .tabs li:before{position:absolute; top:50%; left:0px; width:1px; height:14px; margin-top:-7px; background:#e1e1e1; content:"";}
+.golf-wrap.golf .gmt.best .tabs li:first-child:before{display:none;}
+.golf-wrap.golf .gmt.best .tabs li a{display:block; color:#555; font-size:15px; padding:0px 30px; line-height:120%;}
+.golf-wrap.golf .gmt.best .tabs li a:hover{color:#70b539;}
+.golf-wrap.golf .gmt.best .tabs li.active a{color:#70b539; text-decoration:underline;}
+
+.golf-wrap.golf .gmt.best .list{display:none;}
+.golf-wrap.golf .gmt.best .list.show{display:block;}
+.golf-wrap.golf .gmt.best .list:after{clear:both;content:""; display:block;}
+.golf-wrap.golf .gmt.best .list ul{margin:0px -6px;}
+.golf-wrap.golf .gmt.best .list ul li{position:relative; width:266px; margin:0px 6px; float:left; padding-top:3px;}
+.golf-wrap.golf .gmt.best .list ul li .btxt-num{position:absolute; right:11px; top:0px; color:#fff; font-family:'NanumSquare',sans-serif; text-align:center; width:47px; height:45px; padding-right:3px; background:url(../_Img/Content/frtravel-best-bg.png) no-repeat center; z-index:1;}
+.golf-wrap.golf .gmt.best .list ul li .btxt-num .stxt{font-size:12px; padding-top:4px; display:block; line-height:120%;}
+.golf-wrap.golf .gmt.best .list ul li .btxt-num .num{font-size:17px; display:block; font-weight:600;}
+
+.golf-wrap.golf .gmt.best .list ul li a{border:1px solid #cecece; display:block; }
+.golf-wrap.golf .gmt.best .list ul li .img{width:100%; height:171px; margin-bottom:18px; overflow:hidden; background:#000; display:block;-webkit-transition: all 0.3s ease-out;-moz-transition: all 0.3s ease-out;-o-transition: all 0.3s ease-out;transition: all 0.3s ease-out;}
+.golf-wrap.golf .gmt.best .list ul li .img img{width:100%; -webkit-transition: all 0.3s ease-out;-moz-transition: all 0.3s ease-out;-o-transition: all 0.3s ease-out;transition: all 0.3s ease-out;}
+.golf-wrap.golf .gmt.best .list ul li .btxt{padding:0px 13px; margin-bottom:13px; font-size:16px; color:#222; display:block; line-height:140%; letter-spacing:-0.03em; font-weight:600; height:44px; overflow:hidden; word-break:keep-all;}
+.golf-wrap.golf .gmt.best .list ul li .ctxt{padding:0px 13px; margin-bottom:15px; font-size:12px; color:#656565; line-height:150%; letter-spacing:-0.03em; display:block; height:19px; overflow:hidden;-webkit-transition: all 0.3s ease-out;-moz-transition: all 0.3s ease-out;-o-transition: all 0.3s ease-out;transition: all 0.3s ease-out;}
+.golf-wrap.golf .gmt.best .list ul li .sum{padding:0px 13px; margin-bottom:17px; display:block; line-height:120%; letter-spacing:-0.03em; overflow:hidden;}
+.golf-wrap.golf .gmt.best .list ul li .sum .fl{font-size:15px; color:#777; text-decoration:line-through;}
+.golf-wrap.golf .gmt.best .list ul li .sum .fr{font-size:16px; color:#454545;}
+.golf-wrap.golf .gmt.best .list ul li .sum .fr strong{font-size:19px; color:#ff0000; padding-right:2px;}
+
+.golf-wrap.golf .gmt.best .list ul li a:hover{border:1px solid #fa7905;}
+.golf-wrap.golf .gmt.best .list ul li a:hover .img{height:143px;}
+.golf-wrap.golf .gmt.best .list ul li a:hover .ctxt{height:36px; margin-bottom:25px;}
+.golf-wrap.golf .gmt.best .list ul li a:hover .img img{opacity:0.5;}
+
+.golf-wrap.golf .gmt.best .list .nodata{text-align:center; font-size:18px; line-height:120%; padding:50px 0px;}
+
+.golf-wrap.golf .gmt.best .list .frtrbest-slide .slick-prev{position:absolute; top:50%; left:-80px; z-index:1; width:70px; height:70px; margin-top:-35px; border:0px; font-size:0px; background:url(../_Img/Content/choice-arrowL.png) no-repeat center;}
+.golf-wrap.golf .gmt.best .list .frtrbest-slide .slick-next{position:absolute; top:50%; right:-80px; z-index:1; width:70px; height:70px; margin-top:-35px; border:0px; font-size:0px; background:url(../_Img/Content/choice-arrowR.png) no-repeat center;}
+
+
+
+.gmt_goods_wrap, .gmt_special_box, .gmt_base{width: 1100px; margin: 0 auto; }
+
+/* theme & HOT SALE */
+.gmt_goods_wrap{margin-top:50px}
+.gmt_goods_box{display:inline-block;width:1100px; font-size: 22px; color: #222222; }
+.gmt_goods_box h3 span{color:#70b539 }
+.gmt_goods_lft{float:left}
+.gmt_goods_rgt{float:right}
+.gmt_goods_lft{width:700px;margin-right:13px}
+.gmt_goods_rgt{width:287px}
+.goods_theme_box,.gmt_hotSale_wrap{height:278px;border:1px solid #d0cfd5;padding:20px;margin-top:17px;}
+
+/* theme */
+.goods_theme_box{display:inline-block;width:658px; }
+.goods_theme_lft,.goods_theme_rgt{float:left}
+.goods_theme_lft{width:323px;margin-right:16px}
+.goods_theme_rgt{width:319px}
+.goods_theme_list li.goods_theme_listBtm{margin-top:16px}
+.goods_theme_box a{background: #000; display: block; }
+
+/* HOT SALE */
+.gmt_hotSale_box{position:relative;height:250px;overflow:hidden}
+.gmt_hotSale_banner{position:absolute;left:0}
+.gmt_hotSale_banner li{width:245px;height:250px}
+.gmt_hotSale_banner li a{display:block}
+.gmt_hotSale_banner li a img{width:245px;height:136px}
+.gmt_hotSale_banner li a i{font-style:normal}
+.gmtHotSale_banner_con{padding-top:20px;text-align:center}
+.gmtHotSale_banner_con dt{display:inline-block;width:100%;font-weight:800;font-size:18px;color:#3e5035;letter-spacing:-1px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gmtHotSale_banner_con dt i{display:inline-block;padding-bottom:10px;font-weight:600;font-size:14px;letter-spacing:0}
+.gmtHotSale_banner_con dd{margin-top:10px}
+.gmtHotSale_banner_con dd strong,.gmtHotSale_banner_con dd i{font-size:18px;color:#f01616}
+
+.gmtHotSale_banner_con dd.gmtGoodsArea_con_listTxt02 .area_before{font-size:14px;color:#999;text-decoration:line-through}
+.gmtHotSale_banner_con dd.gmtGoodsArea_con_listTxt02 .area_arrow{padding:0 3px;font-size:15px;color:#6c6c6c}
+.gmtHotSale_banner_con dd.gmtGoodsArea_con_listTxt02 .area_after{font-weight:900;font-size:16px;color:#eb5e00}
+
+.gmtHotSale_bannerBtn_box{margin-top:15px;text-align:center}
+.gmtHotSale_bannerBtn li{padding:0 2px;cursor:pointer}
+
+/* about */
+.gmt_special_box{height:142px;margin-top:75px;text-align:center; position: relative; }
+.gmt_special_box:before{position:absolute; left:50%; top:0px; width:2000px; margin-left:-1000px; height:100%; background:url("../_Img/Content/golf-banner-bg.gif") repeat-x top; display:block; content:""; z-index:-1}
+
+/* qna & service */
+.gmt_mainContents_box{display:inline-block;width:1100px;padding-bottom:60px;margin-top:75px}
+.gmt_mainContents_lft{float:left}
+.gmt_mainContents_rgt{float:right}
+.gmt_mainContents_lft{width:355px;margin-right:15px}
+.gmt_mainContents_lft h3{font-size:18px;color:#2c4162}
+.gmt_qna_box{position:relative;margin-top:17px}
+.gmt_qna_list{border-top:2px solid #2c4162}
+.gmt_qna_list li{height:47px;line-height:47px;border-bottom:1px solid #e4e4e4}
+.gmt_qna_list li i,.customer_list li a{float:left}
+.gmt_qna_list li i{display:inline-block;width:21px;background:url("../_Img/Content/golf-circle.png") no-repeat 0 50%;margin-right:5px;font-style:normal;font-weight:600;font-family:arial;font-size:12px;color:#fff;text-align:center}
+.gmt_qna_list li a{display:inline-block;width:324px;padding-right:5px;font-weight:400;font-size:14px;color:#535353;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.gmt_qna_list li:hover a{text-decoration:underline}
+.gmt_qna_box a.btn_more{position:absolute;right:0;top:-35px;font-weight:600;font-size:13px;color:#7f7f7f}
+.gmt_qna_box a.btn_more span{color:#535353}
+.gmt_mainContents_rgt{width:727px}
+.banner_diyConsult_box{border:1px solid #cdcdcd;margin-top:38px; overflow: hidden; }
+.banner_diyConsult_box img{-webkit-transition:all 0.3s ease-out; -moz-transition:all 0.3s ease-out; -o-transition:all 0.3s ease-out; transition:all 0.3s ease-out}
+
+/* 4/8 add end */
