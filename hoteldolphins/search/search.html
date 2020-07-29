@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>호텔돌핀스</title>
+    <!-- 기본 CSS, JS -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 해당페이지 CSS, JS -->
+    <script type="text/javascript" src="../js/search.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 컨텐츠 -->
+        <section class="container">
+            <!-- 상단타이틀 -->
+            <section class="section_top_title">
+                <h1>호텔 검색</h1>
+                <a href="javascript:history.back();" class="btn_back"><span>뒤로가기</span></a>
+            </section>
+            <!-- //상단타이틀 -->
+
+            <section class="section_type_01">
+                <!-- 호텔검색 -->
+                <div class="hotel_search_box">
+                    <form action="">
+                        <!-- 검색 -->
+                        <div class="search_input_box">
+                            <span class="ipt_text"><input type="text" name="ipt_search" id="ipt_search" placeholder="도시명 또는 호텔명" onclick="location.href='search_city.html'"></span>
+                            <button type="button" name="button" class="btn_keyword_del">검색어 삭제</button>
+                        </div>
+                        <!-- //검색 -->
+                        <!-- 검색_옵션 -->
+                        <div class="search_input_box" style="display:none">
+                            <span class="ipt_text"><input type="text" name="ipt_search" id="ipt_search" placeholder="(옵션) 호텔 명 상세 검색" onclick="location.href='search_city.html'"></span>
+                            <button type="button" name="button" class="btn_keyword_del">검색어 삭제</button>
+                        </div>
+                        <!-- //검색_옵션 -->
+
+                        <!-- 체크인/아웃 -->
+                        <div class="hotel_date_box">
+                            <dl>
+                                <dt>체크인</dt><dd><span>2019.10.06(수)</span></dd>
+                            </dl>
+                            <dl>
+                                <dt>체크아웃</dt><dd><span>2019.10.25(목)</span></dd>
+                            </dl>
+                            <p class="stay"><span>0박</span></p>
+                        </div>
+                        <!-- //체크인/아웃 -->
+
+                        <!-- 객실 및 인원 선택 -->
+                        <div class="hotel_room_box">
+                            <!-- 객실 -->
+                            <dl>
+                                <dt>객실 1</dt>
+                                <dd>
+                                    <span class="txt">인원</span>
+                                    <span class="select_box">
+                                        <select name="" id="">
+                                            <option value="0">선택</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </span>
+                                    <span class="ipt_chk">
+                                        <input type="checkbox" name="chk1" id="chk1" disabled><label for="chk1">트윈 침대</label>
+                                    </span>
+                                </dd>
+                            </dl>
+                            <!-- //객실 -->
+                            <!-- 객실 -->
+                            <dl>
+                                <dt>객실 2</dt>
+                                <dd>
+                                    <span class="txt">인원</span>
+                                    <span class="select_box">
+                                        <select name="" id="">
+                                            <option value="0">선택</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                        </select>
+                                    </span>
+                                    <span class="ipt_chk">
+                                        <input type="checkbox" name="chk2" id="chk2"><label for="chk2">트윈 침대</label>
+                                    </span>
+                                    <button type="button" name="button" class="btn_del_room">삭제</button>
+                                </dd>
+                            </dl>
+                            <!-- //객실 -->
+                            <button type="button" name="button" class="btn_more_room">+ 객실추가</button>
+                        </div>
+                        <!-- //객실 및 인원 선택 -->
+
+                        <div class="btn_type_common">
+                            <button type="button" name="button">검색하기</button>
+                        </div>
+                    </form>
+                </div>
+                <!-- //호텔검색 -->
+            </section>
+
+        </section>
+        <!-- //컨텐츠 -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>호텔돌핀스</title>
+    <!-- 기본 CSS, JS -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 해당페이지 CSS, JS -->
+    <script type="text/javascript" src="../js/search.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 컨텐츠 -->
+        <section class="container">
+            <!-- 상단타이틀 -->
+            <section class="section_top_title">
+                <h1>캘린더</h1>
+                <a href="javascript:history.back();" class="btn_back"><span>뒤로가기</span></a>
+            </section>
+            <!-- //상단타이틀 -->
+
+            <section class="section_type_02">
+                <!-- calendar_wrap -->
+                <div class="calendar_wrap">
+                    <!-- 체크인/아웃 -->
+                    <div class="hotel_date_box">
+                        <dl>
+                            <dt>체크인</dt><dd><span>2019.10.06(수)</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>체크아웃</dt><dd><span>-</span></dd>
+                        </dl>
+                    </div>
+                    <!-- //체크인/아웃 -->
+
+                    <div class="scroll_box">
+                        <!-- 달력 -->
+                        <div class="calendar_box">
+                            <div class="month">2019. 09</div>
+                            <table>
+                                <colgroup>
+                                    <col style="width:15%;"/>
+                                    <col style="width:14%;"/>
+                                    <col style="width:14%;"/>
+                                    <col style="width:14%;"/>
+                                    <col style="width:14%;"/>
+                                    <col style="width:14%;"/>
+                                    <col style="width:15%;"/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="sun">S</th>
+                                        <th scope="col">M</th>
+                                        <th scope="col">T</th>
+                                        <th scope="col">W</th>
+                                        <th scope="col">T</th>
+                                        <th scope="col">F</th>
+                                        <th scope="col" class="sat">S</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!--
+                                        [D]
+                                        선택 한 날짜 클래스 select_day / 선택 한 날짜 사이 기간 클래스 select_range / 지난 날짜 클래스 past
+                                    -->
+                                    <tr>
+                                        <td class="sun past"><span>1</span></td>
+                                        <td class="past"><span>2</span></td>
+                                        <td class="past"><span>3</span></td>
+                                        <td class="select_day"><span>4</span></td>
+                                        <td class="select_range"><span>5</span></td>
+                                        <td class="select_range"><span>6</span></td>
+                                        <td class="sat select_range"><span>7</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun select_range"><span>8</span></td>
+                                        <td class="select_range"><span>9</span></td>
+                                        <td class="select_range"><span>10</span></td>
+                                        <td class="select_day"><span>11</span></td>
+                                        <td class=""><span>12</span></td>
+                                        <td class=""><span>13</span></td>
+                                        <td class="sat"><span>14</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun"><span>15</span></td>
+                                        <td class=""><span>16</span></td>
+                                        <td class=""><span>17</span></td>
+                                        <td class=""><span>18</span></td>
+                                        <td class=""><span>19</span></td>
+                                        <td class=""><span>20</span></td>
+                                        <td class="sat"><span>21</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun"><span>22</span></td>
+                                        <td class=""><span>23</span></td>
+                                        <td class=""><span>24</span></td>
+                                        <td class=""><span>25</span></td>
+                                        <td class=""><span>26</span></td>
+                                        <td class=""><span>27</span></td>
+                                        <td class="sat"><span>28</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun"><span>29</span></td>
+                                        <td class=""><span>30</span></td>
+                                        <td class=""><span></span></td>
+                                        <td class=""><span></span></td>
+                                        <td class=""><span></span></td>
+                                        <td class=""><span></span></td>
+                                        <td class=""><span></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //달력 -->
+
+                        <!-- 달력 -->
+                        <div class="calendar_box">
+                            <div class="month">2019. 10</div>
+                            <table>
+                                <colgroup>
+                                    <col style="width:15%;"/>
+                                    <col style="width:14%;"/>
+                                    <col style="width:14%;"/>
+                                    <col style="width:14%;"/>
+                                    <col style="width:14%;"/>
+                                    <col style="width:14%;"/>
+                                    <col style="width:15%;"/>
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="sun">S</th>
+                                        <th scope="col">M</th>
+                                        <th scope="col">T</th>
+                                        <th scope="col">W</th>
+                                        <th scope="col">T</th>
+                                        <th scope="col">F</th>
+                                        <th scope="col" class="sat">S</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!--
+                                        [D]
+                                        선택 한 날짜 select_day / 선택 한 날짜 사이 기간 select_range
+                                    -->
+                                    <tr>
+                                        <td class="sun"><span></span></td>
+                                        <td class=""><span></span></td>
+                                        <td class=""><span>1</span></td>
+                                        <td class=""><span>2</span></td>
+                                        <td class=""><span>3</span></td>
+                                        <td class=""><span>4</span></td>
+                                        <td class="sat"><span>5</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun"><span>6</span></td>
+                                        <td class=""><span>7</span></td>
+                                        <td class=""><span>8</span></td>
+                                        <td class=""><span>9</span></td>
+                                        <td class=""><span>10</span></td>
+                                        <td class=""><span>11</span></td>
+                                        <td class="sat"><span>12</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun"><span>13</span></td>
+                                        <td class=""><span>14</span></td>
+                                        <td class=""><span>15</span></td>
+                                        <td class=""><span>16</span></td>
+                                        <td class=""><span>17</span></td>
+                                        <td class=""><span>18</span></td>
+                                        <td class="sat"><span>19</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun"><span>20</span></td>
+                                        <td class=""><span>21</span></td>
+                                        <td class=""><span>22</span></td>
+                                        <td class=""><span>23</span></td>
+                                        <td class=""><span>24</span></td>
+                                        <td class=""><span>25</span></td>
+                                        <td class="sat"><span>26</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="sun"><span>27</span></td>
+                                        <td class=""><span>28</span></td>
+                                        <td class=""><span>29</span></td>
+                                        <td class=""><span>30</span></td>
+                                        <td class=""><span>31</span></td>
+                                        <td class=""><span></span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //달력 -->
+                    </div>
+
+                    <div class="btn_type_common">
+                        <button type="button" name="button">확인 (<span>3</span>박)</button>
+                    </div>
+                </div>
+                <!-- //calendar_wrap -->
+            </section>
+
+        </section>
+        <!-- //컨텐츠 -->
+    </div>
+</body>
+</html>

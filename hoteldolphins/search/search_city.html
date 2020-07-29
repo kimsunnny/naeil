@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>호텔돌핀스</title>
+    <!-- 기본 CSS, JS -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 해당페이지 CSS, JS -->
+    <script type="text/javascript" src="../js/search.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+		<header id="header">
+			<section class="header_wrap">
+                <h1><a href="#none"><img src="../images/logo.png" alt="호텔돌핀스"></a></h1>
+                <a href="#none" class="btn_left_menu"><span>메뉴보기</span></a>
+                <a href="#none" class="btn_reserve">
+                    <span>나의 예약내역</span>
+                    <em>5</em> <!-- [D] 예약내역 있을 때 -->
+                </a>
+            </section>
+		</header>
+		<!-- //헤더 -->
+
+        <!-- 레트프 메뉴 -->
+        <section class="lnb_menu_wrap">
+            <a href="#none" class="btn_close"><span>닫기</span></a>
+
+            <div class="my_info">
+                <!-- 로그인 후 -->
+                <div class="user">
+                    <strong>내일투어 님</strong>
+                    <a href="#none"><span>설정</span></a>
+                    <span class="id">id@naeiltour.com</span>
+                </div>
+                <!-- 로그인 전
+                <a href="#none" class="txt">로그인 해주세요.</a>
+                -->
+            </div>
+
+            <div class="my_menu">
+                <div class="link">
+                    <a href="#none"><span>내 포인트</span><em>10,000P</em></a>
+                    <a href="#none"><span>내 쿠폰</span><em>1장</em></a>
+                </div>
+                <ul class="lnb">
+                    <li><a href="#none"><span>나의 예약정보</span></a></li>
+                    <li><a href="#none"><span>관심호텔</span></a></li>
+                    <li><a href="#none"><span>문의 내역</span></a></li>
+                </ul>
+            </div>
+
+            <div class="cs_menu">
+                <ul class="lnb">
+                    <li><a href="#none"><span>이벤트</span></a></li>
+                    <li><a href="#none"><span>공지사항</span></a></li>
+                    <li><a href="#none"><span>호텔예약 및 이용안내</span></a></li>
+                    <li><a href="#none"><span>자주 묻는 질문</span></a></li>
+                    <li><a href="#none"><span>1:1 묻고 답하기</span></a></li>
+                    <li><a href="#none"><span>고객의 소리</span></a></li>
+                </ul>
+            </div>
+
+            <!-- 20191106 링크 추가 및 텍스트 수정, 현지렌트카/여행자보험 삭제 -->
+            <div class="naeil_family">
+                <ul>
+                    <li><a href="http://m.naeiltour.co.kr" target="_blank"><span>내일투어</span></a></li>
+                    <li><a href="http://www.naeiltour.co.kr/mweb/air/air_main.asp" target="_blank"><span>실시간 항공</span></a></li>
+                    <li><a href="http://www.naeilstore.com/mo/main/main.asp" target="_blank"><span>현지투어/<br>패스/입장권</span></a></li>
+                    <li><a href="#none"><span>호텔 할인쿠폰</span></a></li>
+                    <!-- 삭제
+                    <li><a href="https://www.rentalcars.com/?affiliateCode=naeiltour&amp;preflang=ko" target="_blank"><span>현지 렌트카</span></a></li>
+                    <li><a href="https://naeilstore.toursafe.co.kr/main/main.php" target="_blank"><span>여행자 보험</span></a></li>
+                    -->
+                </ul>
+            </div>
+            <!-- //20191106 링크 추가 및 텍스트 수정, 현지렌트카/여행자보험 삭제 -->
+        </section>
+        <!-- //레트프 메뉴 -->
+
+        <!-- 컨텐츠 -->
+        <section class="container">
+            <!-- 상단타이틀 -->
+            <section class="section_top_title">
+                <h1>여행지 선택</h1>
+                <a href="javascript:history.back();" class="btn_back"><span>뒤로가기</span></a>
+            </section>
+            <!-- //상단타이틀 -->
+
+            <section class="section_type_01">
+                <!-- 호텔검색 -->
+                <div class="hotel_search_box">
+                    <form action="">
+                        <!-- 검색 -->
+                        <div class="search_input_box">
+                            <span class="ipt_text"><input type="text" name="ipt_search" id="ipt_search" placeholder="도시명 또는 호텔명"></span>
+                            <button type="button" name="button" class="btn_keyword_del">검색어 삭제</button>
+                        </div>
+                        <!-- //검색 -->
+
+                        <!-- 검색 자동완성 -->
+                        <div class="search_auto_box">
+                            <div class="scroll_box">
+                                <ul>
+                                    <li><a href="#none">오사카, 일본</a></li>
+                                    <li class="i_area"><a href="#none">오사카, 일본</a></li>
+                                    <li class="i_area"><a href="#none">오사카, 일본</a></li>
+                                    <li class="i_area"><a href="#none">오사카, 일본</a></li>
+                                    <li class="i_hotel"><a href="#none">아고라 오사카 모리구치<span>일본 오사카</span></a></li>
+                                    <li class="i_hotel"><a href="#none">아나 크라운 플라자 오사카<span>일본 오사카</span></a></li>
+                                    <li class="i_hotel"><a href="#none">아고라 오사카 모리구치<span>일본 오사카</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- //검색 자동완성 -->
+
+                        <!-- 주요 도시 선택 -->
+                        <div class="select_city_box">
+                            <p class="tit">주요 도시 선택</p>
+                            <ul>
+                                <li><a href="#none">괌</a></li>
+                                <li><a href="#none">뉴욕</a></li>
+                                <li><a href="#none">도쿄</a></li>
+                                <li><a href="#none">라스베가스</a></li>
+                                <li><a href="#none">런던</a></li>
+                                <li><a href="#none">로마</a></li>
+                                <li><a href="#none">바르셀로나</a></li>
+                                <li><a href="#none">방콕</a></li>
+                                <li><a href="#none">상해</a></li>
+                                <li><a href="#none">싱가포르</a></li>
+                                <li><a href="#none">오사카</a></li>
+                                <li><a href="#none">타이페이</a></li>
+                                <li><a href="#none">파리</a></li>
+                                <li><a href="#none">호놀룰루</a></li>
+                                <li><a href="#none">홍콩</a></li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                <!-- //호텔검색 -->
+            </section>
+
+        </section>
+        <!-- //컨텐츠 -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>호텔돌핀스</title>
+	<!-- 기본 CSS, JS -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 슬라이드 CSS, JS -->
+    <script src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <!-- 해당페이지 CSS, JS -->
+    <link rel="stylesheet" href="../css/reserve.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 컨텐츠 -->
+        <section class="container">
+            <!-- 상단타이틀 -->
+            <section class="section_top_title">
+                <h1>예약하기</h1>
+                <a href="javascript:history.back();" class="btn_back"><span>뒤로가기</span></a>
+            </section>
+            <!-- //상단타이틀 -->
+
+            <!-- 예약하기 -->
+            <div class="reserve_info_wrap">
+                <!-- 예약확인 -->
+                <div class="section_type_02">
+                    <h2>예약확인</h2>
+                    <!-- 체크인/아웃 -->
+                    <div class="hotel_date_box">
+                        <dl>
+                            <dt>체크인</dt><dd><span>2019.10.06(수)</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>체크아웃</dt><dd><span>2019.10.25(목)</span></dd>
+                        </dl>
+                        <p class="stay"><span>8박</span></p>
+                    </div>
+                    <!-- //체크인/아웃 -->
+
+                    <div class="info_type_common">
+                        <dl>
+                            <dt>국가/도시</dt>
+                            <dd><span>미국(United States) / 라스베가스 - NV(Las Vegas - NV)</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>호텔명</dt>
+                            <dd><strong>엠지엠 그랜드 호텔 MGM GRAND HOTEL</strong></dd>
+                        </dl>
+                        <dl>
+                            <dt>객실타입</dt>
+                            <dd><span>1 Double (Standard King)</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>조식여부</dt>
+                            <dd><span>None</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>취소가능일</dt>
+                            <dd><span>2019-08-13</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>Remark</dt>
+                            <dd>
+                                <ul class="remark">
+                                    <li>호텔 근처에서 진행중인 공사가 있습니다</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>결제금액</dt>
+                            <dd>
+                                <!-- 20191120 금액 추가 -->
+                                <div class="before">
+                                    <strong>110,492원</strong><span>(USD 92)</span>
+                                </div>
+                                <strong class="txt_type_02">110,492원</strong><span>(USD 92)</span><br><span>(현재 환율 : USD 1,201)</span>
+                            </dd>
+                        </dl>
+                        <!-- 20191114 할인쿠폰 삭제
+                        <dl>
+                            <dt>할인쿠폰</dt>
+                            <dd>
+                                <span class="txt_type_02">7% 할인쿠폰 사용가능 (할인금액 7,734원)</span>
+                                <em>* 쿠폰은 결제 단계에서 적용가능합니다</em>
+                            </dd>
+                        </dl> -->
+                    </div>
+                </div>
+
+                <!-- 20191114 할인쿠폰 추가 -->
+                <!-- 할인쿠폰 -->
+                <div class="section_type_03">
+                    <h2>할인쿠폰</h2>
+                    <div class="coupon_box">
+                        <span class="select_box">
+                            <select name="" id="">
+                                <option value="0">쿠폰 선택 안 함</option>
+                                <option value="1">선택</option>
+                                <option value="2">선택</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="guide_txt">
+                        <p>(사용가능 쿠폰 0건/ 보유쿠폰 1건)</p>
+                    </div>
+                </div>
+                <!-- //20191114 할인쿠폰 추가 -->
+
+                <!-- 예약자 -->
+                <div class="section_type_03">
+                    <h2>예약자 정보</h2>
+                    <div class="input_type_common">
+                        <dl>
+                            <dt>이름</dt>
+                            <dd>
+                                <span class="ipt_text"><input type="text" name="ipt" id="ipt" title="이름" value=""></span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>휴대폰 번호</dt>
+                            <dd>
+                                <div class="tel_box">
+                                    <span class="select_box">
+                                        <select name="" id="" title="휴대폰 번호 앞자리">
+                                            <option value="0">선택</option>
+                                            <option value="1">선택</option>
+                                            <option value="2">선택</option>
+                                        </select>
+                                    </span>
+                                    <em>-</em>
+                                    <span class="ipt_text"><input type="tel" name="tel2" id="tel2" title="휴대폰 번호 중간자리" value=""></span>
+                                    <em>-</em>
+                                    <span class="ipt_text"><input type="tel" name="tel3" id="tel3" title="휴대폰 번호 마지막자리" value=""></span>
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>이메일</dt>
+                            <dd>
+                                <span class="ipt_text"><input type="email" name="email" id="email" title="이메일" value=""></span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>요청사항</dt>
+                            <dd>
+                                <div class="chk_box">
+                                    <!-- 체크박스 -->
+                                    <span class="ipt_chk">
+                                        <input type="checkbox" name="chk1" id="chk1"><label for="chk1">금연실</label>
+                                    </span>
+                                    <span class="ipt_chk">
+                                        <input type="checkbox" name="chk2" id="chk2"><label for="chk2">허니문</label>
+                                    </span>
+                                    <span class="ipt_chk">
+                                        <input type="checkbox" name="chk3" id="chk3"><label for="chk3">늦은 체크인</label>
+                                    </span>
+                                    <span class="ipt_chk">
+                                        <input type="checkbox" name="chk4" id="chk4"><label for="chk4">기타</label>
+                                    </span>
+                                </div>
+                                <!-- textarea -->
+                                <textarea class="textarea_box" name="" id="" cols="10" rows="3" title="요청사항"></textarea>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <!-- 투숙객 -->
+                <div class="section_type_03">
+                    <h2>투숙객 정보</h2>
+                    <span class="txt_required">* 필수입력 항목</span> <!-- 20191114 위치&클래스 변경 -->
+
+                    <!-- 룸 타입 -->
+                    <div class="input_type_common">
+                        <dl class="room_type">
+                            <dt>객실명</dt>
+                            <dd><span>1 Double (Standard King)</span></dd>
+                        </dl>
+                        <!-- 투숙객 --> <!-- 20191107 수정 -->
+                        <div class="guest_box">
+                            <p class="guest">투숙객 1</p>
+
+                            <!-- 20191114 체크박스 추가 -->
+                            <span class="ipt_chk">
+                                <input type="checkbox" name="chk" id="chk"><label for="chk">예약자와 동일</label>
+                            </span>
+
+							<div class="dl_box kor">
+								<dl>
+									<dt>한글명 <span class="txt_type_02">*</span></dt> <!-- 20191107 투수객 1 항목에 별표 전체 추가 -->
+									<dd>
+										<span class="ipt_text"><input type="text" name="ipt01" id="ipt01" title="한글명" value=""></span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>성별 <span class="txt_type_02">*</span></dt>
+									<dd>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio05" id="radio01" checked><label for="radio01">남</label>
+										</span>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio05" id="radio02"><label for="radio02">여</label>
+										</span>
+									</dd>
+								</dl>
+							</div>
+                            <div class="dl_box eng">
+                                <dl>
+                                    <dt>영문성 <span class="txt_type_02">*</span></dt>
+                                    <dd>
+                                        <span class="ipt_text"><input type="text" name="ipt02" id="ipt02" title="영문성" value=""></span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>영문이름 <span class="txt_type_02">*</span></dt>
+                                    <dd>
+                                        <span class="ipt_text"><input type="text" name="ipt03" id="ipt03" title="영문이름" value=""></span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="dl_box adult">
+                                <dl>
+									<dt>성인여부 <span class="txt_type_02">*</span></dt>
+									<dd>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio06" id="radio03" checked><label for="radio03">성인</label>
+										</span>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio06" id="radio04"><label for="radio04">아동</label> <!-- [D] 아동 선택 시 생년월일 활성화 -->
+										</span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>생년월일 <span class="txt_type_02">*</span></dt> <!-- 20191107 투수객 1 항목에 별표 전체 추가 -->
+									<dd>
+										<span class="ipt_text"><input type="tel" name="ipt04" id="ipt04" title="생년월일" value="" disabled></span>
+									</dd>
+								</dl>
+                            </div>
+                        </div>
+                        <!-- //투숙객 -->
+
+                        <!-- 투숙객 -->
+                        <div class="guest_box">
+                            <p class="guest">투숙객 2</p>
+							<div class="dl_box kor">
+								<dl>
+									<dt>한글명 <span class="txt_type_02">*</span></dt> <!-- 20191107 투수객 1 항목에 별표 전체 추가 -->
+									<dd>
+										<span class="ipt_text"><input type="text" name="ipt11" id="ipt11" title="한글명" value=""></span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>성별 <span class="txt_type_02">*</span></dt>
+									<dd>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio15" id="radio11" checked><label for="radio11">남</label>
+										</span>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio15" id="radio12"><label for="radio12">여</label>
+										</span>
+									</dd>
+								</dl>
+							</div>
+                            <div class="dl_box eng">
+                                <dl>
+                                    <dt>영문성 <span class="txt_type_02">*</span></dt>
+                                    <dd>
+                                        <span class="ipt_text"><input type="text" name="ipt12" id="ipt12" title="영문성" value=""></span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>영문이름 <span class="txt_type_02">*</span></dt>
+                                    <dd>
+                                        <span class="ipt_text"><input type="text" name="ipt13" id="ipt13" title="영문이름" value=""></span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="dl_box adult">
+                                <dl>
+									<dt>성인여부 <span class="txt_type_02">*</span></dt>
+									<dd>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio16" id="radio13"><label for="radio13">성인</label>
+										</span>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio16" id="radio14" checked><label for="radio14">아동</label> <!-- [D] 아동 선택 시 생년월일 활성화 -->
+										</span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>생년월일 <span class="txt_type_02">*</span></dt> <!-- 20191107 투수객 1 항목에 별표 전체 추가 -->
+									<dd>
+										<span class="ipt_text"><input type="tel" name="ipt14" id="ipt14" title="생년월일" value=""></span>
+									</dd>
+								</dl>
+                            </div>
+                        </div>
+                        <!-- //투숙객 --> <!-- //20191107 수정 -->
+                    </div>
+                    <!-- //룸 타입 -->
+
+                    <!-- 룸 타입 -->
+                    <div class="input_type_common">
+                        <dl class="room_type">
+                            <dt>객실명</dt>
+                            <dd><span>Studio King Urban View, 1 King Bed</span></dd>
+                        </dl>
+                        <!-- 투숙객 --> <!-- 20191107 수정 -->
+                        <div class="guest_box">
+                            <p class="guest">투숙객 1</p>
+							<div class="dl_box kor">
+								<dl>
+									<dt>한글명 <span class="txt_type_02">*</span></dt> <!-- 20191107 투수객 1 항목에 별표 전체 추가 -->
+									<dd>
+										<span class="ipt_text"><input type="text" name="ipt21" id="ipt21" title="한글명" value=""></span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>성별 <span class="txt_type_02">*</span></dt>
+									<dd>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio25" id="radio21" checked><label for="radio21">남</label>
+										</span>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio25" id="radio22"><label for="radio22">여</label>
+										</span>
+									</dd>
+								</dl>
+							</div>
+                            <div class="dl_box eng">
+                                <dl>
+                                    <dt>영문성 <span class="txt_type_02">*</span></dt>
+                                    <dd>
+                                        <span class="ipt_text"><input type="text" name="ipt22" id="ipt22" title="영문성" value=""></span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>영문이름 <span class="txt_type_02">*</span></dt>
+                                    <dd>
+                                        <span class="ipt_text"><input type="text" name="ipt23" id="ipt23" title="영문이름" value=""></span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="dl_box adult">
+                                <dl>
+									<dt>성인여부 <span class="txt_type_02">*</span></dt>
+									<dd>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio26" id="radio23" checked><label for="radio23">성인</label>
+										</span>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio26" id="radio24"><label for="radio24">아동</label> <!-- [D] 아동 선택 시 생년월일 활성화 -->
+										</span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>생년월일 <span class="txt_type_02">*</span></dt> <!-- 20191107 투수객 1 항목에 별표 전체 추가 -->
+									<dd>
+										<span class="ipt_text"><input type="tel" name="ipt24" id="ipt24" title="생년월일" value="" disabled></span>
+									</dd>
+								</dl>
+                            </div>
+                        </div>
+                        <!-- //투숙객 -->
+
+                        <!-- 투숙객 -->
+                        <div class="guest_box">
+                            <p class="guest">투숙객 2</p>
+							<div class="dl_box kor">
+								<dl>
+									<dt>한글명 <span class="txt_type_02">*</span></dt> <!-- 20191107 투수객 1 항목에 별표 전체 추가 -->
+									<dd>
+										<span class="ipt_text"><input type="text" name="ipt31" id="ipt31" title="한글명" value=""></span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>성별 <span class="txt_type_02">*</span></dt>
+									<dd>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio35" id="radio31" checked><label for="radio31">남</label>
+										</span>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio35" id="radio32"><label for="radio32">여</label>
+										</span>
+									</dd>
+								</dl>
+							</div>
+                            <div class="dl_box eng">
+                                <dl>
+                                    <dt>영문성 <span class="txt_type_02">*</span></dt>
+                                    <dd>
+                                        <span class="ipt_text"><input type="text" name="ipt32" id="ip32" title="영문성" value=""></span>
+                                    </dd>
+                                </dl>
+                                <dl>
+                                    <dt>영문이름 <span class="txt_type_02">*</span></dt>
+                                    <dd>
+                                        <span class="ipt_text"><input type="text" name="ipt33" id="ipt33" title="영문이름" value=""></span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="dl_box adult">
+                                <dl>
+									<dt>성인여부 <span class="txt_type_02">*</span></dt>
+									<dd>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio36" id="radio33"><label for="radio33">성인</label>
+										</span>
+										<span class="ipt_radio type3">
+											<input type="radio" name="radio36" id="radio34" checked><label for="radio34">아동</label> <!-- [D] 아동 선택 시 생년월일 활성화 -->
+										</span>
+									</dd>
+								</dl>
+								<dl>
+									<dt>생년월일 <span class="txt_type_02">*</span></dt> <!-- 20191107 투수객 1 항목에 별표 전체 추가 -->
+									<dd>
+										<span class="ipt_text"><input type="tel" name="ipt34" id="ipt34" title="생년월일" value=""></span>
+									</dd>
+								</dl>
+                            </div>
+                        </div>
+                        <!-- //투숙객 --> <!-- //20191107 수정 -->
+                    </div>
+                    <!-- //룸 타입 -->
+                </div>
+
+                <!-- 여행약관 및 개인정보 취급 방침 -->
+                <div class="section_type_03">
+                    <h2>여행약관 및 개인정보 취급 방침</h2>
+                    <!-- 약관-->
+                    <div class="term_check_box">
+                        <div class="all">
+                            <span class="ipt_chk">
+                                <input type="checkbox" name="chk_all" id="chk_all"><label for="chk_all">호텔돌핀스 이용약관 전체 동의</label>
+                            </span>
+                        </div>
+                        <ul>
+                            <li>
+                                <span class="ipt_chk type2">
+                                    <input type="checkbox" name="chk_term1" id="chk_term1"><label for="chk_term1">호텔예약 약관</label>
+                                </span>
+                                <a href="pop_term_01.html" class="btn_more_term"><span>상세보기</span></a>
+                            </li>
+                            <li>
+                                <span class="ipt_chk type2">
+                                    <input type="checkbox" name="chk_term2" id="chk_term2"><label for="chk_term2">개인정보 수집 및 이용안내</label>
+                                </span>
+                                <a href="pop_term_02.html" class="btn_more_term"><span>상세보기</span></a>
+                            </li>
+                            <li>
+                                <span class="ipt_chk type2">
+                                    <input type="checkbox" name="chk_term3" id="chk_term3"><label for="chk_term3">개인정보처리방침 제 3차 제공안내</label>
+                                </span>
+                                <a href="pop_term_03.html" class="btn_more_term"><span>상세보기</span></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="guide_txt">
+                        <p>※ 주의사항</p>
+                        <ul>
+                            <li>· 일부 호텔의 경우 예약 확정 후 이름변경. 날짜변경 를 비롯한 모든 예약 변경이 안되오니 다시 한번 예약 요청 사항을 확인해주시기 바랍니다.</li>
+                            <li>· 일부 도시의 경우 City Tax, Local Tax, Resort Fee, Registration Fee 등의 추가 비용이 발생하며, 이는 호텔요금에 포함할 수 없는 별도의 요금이며, 호텔 투숙시 현금으로 직접 지불하셔야 합니다.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 버튼 -->
+                <div class="btn_type_common">
+                    <button type="button" name="button">결제하기</button>
+                </div>
+            </div>
+            <!-- //예약하기 -->
+
+        </section>
+        <!-- //컨텐츠 -->
+
+        <!-- 푸터 -->
+		<footer id="footer">
+			<!-- SNS -->
+			<div class="footer_sns_wrap">
+				<ul class="sns_list">
+					<li class="sns_youtube"><!-- 유투브 -->
+						<a href="https://www.youtube.com/user/Naeiltour" target="_blank">
+							<img src="http://www.naeiltour.co.kr/_Img/Layout/ficon-youtube.png" alt="내일투어 유투브" />
+						</a>
+					</li>
+					<li class="sns_blog"><!-- 블로그 -->
+						<a href="http://m.blog.naver.com/naeiltour" target="_blank">
+							<img src="http://www.naeiltour.co.kr/app/images/common/sns_blog.png" alt="내일투어 블로그" />
+						</a>
+					</li>
+					<li class="sns_post"><!-- 포스트 -->
+						<a href="https://post.naver.com/my.nhn?memberNo=468034" target="_blank">
+							<img src="http://www.naeiltour.co.kr/_Img/Layout/ficon-write.png" alt="내일투어 네이버포스트" />
+						</a>
+					</li>
+					<li class="sns_insta"><!-- 인스타 -->
+						<a href="https://www.instagram.com/naeiltour.co.kr/" target="_blank">
+							<img src="http://www.naeiltour.co.kr/app/images/common/sns_insta.png" alt="내일투어 인스타그램" />
+						</a>
+					</li>
+					<li class="sns_facebook"><!-- 페이스북 -->
+						<a href="https://m.facebook.com/naeiltour.co.kr/?ref=bookmarks" target="_blank">
+							<img src="http://www.naeiltour.co.kr/app/images/common/sns_fb.png" alt="내일투어 페이스북" />
+						</a>
+					</li>
+					<li class="sns_kakao"><!-- 카톡 -->
+						<a href="https://pf.kakao.com/_BvswE" target="_blank">
+							<img src="http://www.naeiltour.co.kr/app/images/common/sns_kakao.png" alt="내일투어 카카오" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_bottom_wrap">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="/">호텔돌핀스 홈</a></li> <!-- 20191104 텍스트 및 링크 수정 -->
+						<li><a href="http://www.naeiltour.co.kr/app/company/useInfo.asp">이용약관</a></li>
+						<li><a href="http://www.naeiltour.co.kr/app/reserve/reserve_pop04.asp"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="http://www.naeiltour.co.kr/app/reserve/reserve_pop01.asp">여행약관</a></li>
+						<li><a href="#n">pc보기</a></li>
+					</ul>
+				</div>
+				<div class="footer_info">
+					<h1><img src="http://www.naeiltour.co.kr/app/images/common/footer_logo.png" alt="내일투어" /></h1> <!-- 20191104 로고 링크 삭제 -->
+					<p class="footer_address">
+						대표이사:이진석<br/>
+						서울시 중구 세종대로11길 43 내일투어빌딩<br/>
+						개인정보관리책임자:김경윤/사업자등록번호:110-81-33092<br/>
+						통신판매업신고번호:중구 제03285호/master@naeiltour.co.kr<br/>
+						관광사업자등록번호:중구 제 2001-07호<br/>
+					</p>
+					<p class="footer_copyright">Copyright&copy;1995-2018 Naeil Tour.,Ltd. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- //푸터 -->
+    </div>
+</body>
+</html>
