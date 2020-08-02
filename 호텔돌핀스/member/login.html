@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>호텔돌핀스</title>
+    <!-- 기본 CSS, JS -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 슬라이드 CSS, JS -->
+    <script src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <!-- 해당페이지 CSS, JS -->
+    <link rel="stylesheet" href="../css/member.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 컨텐츠 -->
+        <section class="container">
+            <!-- 상단타이틀 -->
+            <section class="section_top_title">
+                <h1>로그인</h1>
+                <a href="javascript:history.back();" class="btn_back"><span>뒤로가기</span></a>
+            </section>
+            <!-- //상단타이틀 -->
+
+			<section class="member_login_wrap">
+                <form action="">
+                    <!-- tab -->
+                    <div class="tab_type_common tab_fn">
+                        <ul class="col2">
+                            <li class="on"><span>회원 로그인</span></li>
+                            <li><span>비회원 예약조회</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_contents">
+                        <!-- 회원 로그인 -->
+                        <div class="cont active">
+                            <!-- 로그인 -->
+                            <div class="login_box">
+                                <span class="ipt_text"><input type="text" name="user_id" id="user_id" placeholder="아이디(이메일 주소)를 입력하세요"></span>
+                                <span class="ipt_text"><input type="password" name="user_pw" id="user_pw" placeholder="비밀번호를 입력하세요"></span>
+                                <div class="btn_type_common">
+                                    <button type="button" name="button">로그인</button>
+                                </div>
+                                <div class="chk_box">
+                                    <span class="ipt_chk">
+                                        <input type="checkbox" name="chk1" id="chk1"><label for="chk1">아이디 저장</label>
+                                    </span>
+                                    <span class="ipt_chk">
+                                        <input type="checkbox" name="chk2" id="chk2"><label for="chk2">자동 로그인</label>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- sns로그인 -->
+                            <div class="login_sns_box">
+                                <p class="tit"><span>SNS 로그인</span></p>
+                                <div class="btn_type_common">
+                                    <button type="button" name="button" class="btn_naver">네이버로 로그인</button>
+                                    <button type="button" name="button" class="btn_kakao">카카오톡으로 로그인</button>
+                                </div>
+                            </div>
+
+                            <div class="login_link_txt">
+                                <span><a href="#none">아이디 찾기</a></span>
+                                <span><a href="#none">비밀번호 찾기</a></span>
+                                <span><a href="#none">회원가입</a></span>
+                            </div>
+                        </div>
+
+                        <!-- 비회원 예약조회 -->
+                        <div class="cont">
+                            <div class="login_box">
+                                <div class="radio_box">
+                                    <span class="ipt_radio">
+                                        <input type="radio" name="radio" id="radio1" checked><label for="radio1">예약번호</label>
+                                    </span>
+                                    <span class="ipt_radio">
+                                        <input type="radio" name="radio" id="radio2"><label for="radio2">비밀번호</label>
+                                    </span>
+                                </div>
+
+                                <!-- 예약번호 조회 -->
+                                <div class="number_ipt" style="display:block;">
+                                    <span class="ipt_text"><input type="text" name="user_num" id="user_num" placeholder="예약번호를 입력하세요"></span>
+                                    <span class="ipt_text"><input type="text" name="user_id2" id="user_id2" placeholder="이메일 아이디를 입력하세요"></span>
+                                </div>
+
+                                <!-- 비밀번호 조회 -->
+                                <div class="number_ipt" style="display:none;">
+                                    <span class="ipt_text"><input type="text" name="user_name" id="user_name" placeholder="예약자 이름을 입력하세요"></span>
+                                    <span class="ipt_text"><input type="text" name="user_id3" id="user_id3" placeholder="이메일 아이디를 입력하세요"></span>
+                                    <span class="ipt_text"><input type="password" name="user_pw2" id="user_pw2" placeholder="비밀번호를 입력하세요"></span>
+                                </div>
+                                
+                                <div class="btn_type_common">
+                                    <button type="button" name="button">예약 확인</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+
+        </section>
+        <!-- //컨텐츠 -->
+    </div>
+</body>
+</html>

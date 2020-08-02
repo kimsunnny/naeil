@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+/****************************** 
+    common 
+*******************************/
+/* rem */
+html{font-size: 20px; }
+body{font-size: 1rem; }
+
+/* addClass */
+.hide{position: absolute; width:  1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); border: 0; }
+.clear::after{clear: both; content:""; display:block; }
+.border{border-bottom: 5px solid #e9ecee; }
+
+/****************************** 
+    header 
+*******************************/
+header{padding: 0 0.575rem 0; background: #3399fe; }
+header .top{overflow: hidden; }
+header .top h1{float: left; padding: 0.7rem 0 0; }
+header .top h1 a{display: block; width: /*156px*/3.9rem; height: /*26px*/0.65rem; background: url(../images/logo.jpg) no-repeat 0 0 / 100% auto;}
+header .top .info{float: right; padding: 0.575rem 0 0;}
+header .top .info .alarm,
+header .top .info .mypage,
+header .top .info .menu{display: block; float: left; margin: 0 0 0 0.75rem; width: 1rem; height: 1rem; background: no-repeat center / 0.8333rem auto; }
+header .top .info .alarm{background-image: url(../images/ico_alarm.jpg); }
+header .top .info .mypage{background-image: url(../images/ico_mypage.jpg); }
+header .top .info .menu{background-image: url(../images/ico_menu.jpg); }
+{background-image: url(../img/ico_alarm.jpg);}
+header .search{display: flex; margin: 0.666rem 0 0; height: 1.55rem; }
+header .search input{flex: 1; height: 1.55rem; text-indent: 0.5rem; }
+header .search input:focus{outline: none; }
+header .search button{flex: none; width: 2.033rem; height: 1.55rem; background: url(../images/ico_alarm.jpg) no-repeat #fff center / 0.83rem; cursor: pointer; }
+header .search button:focus{outline: none; }
+header nav ul{display: flex; justify-content: space-between; }
+header nav ul li{}
+header nav ul li a{display: block; padding: 0 0.333rem; font-size: 0.71666rem; color: #fff; }
+header nav ul li a:hover{color: #fbf77e; position: relative; transition: all .3s; }
+header nav ul li a span{display: block; position: relative; padding: 0.2rem;  height: 100%; height: 2.05rem; line-height: 2.05rem; }
+header nav ul li a span:before{content: ''; display: block; position: absolute; left: 0; bottom: 0; width: 0; height: 3px; background: #fbf77e; transition: all .3s; }
+header nav ul li a:hover span:before{width: 100%; }

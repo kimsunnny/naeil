@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>호텔돌핀스</title>
+    <!-- 기본 CSS, JS -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 슬라이드 CSS, JS -->
+    <script src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <!-- 해당페이지 CSS, JS -->
+    <link rel="stylesheet" href="../css/category.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 컨텐츠 -->
+        <section class="container">
+            <!-- 상단타이틀 -->
+            <section class="section_top_title">
+                <h1>리조트 지역 선택</h1>
+                <a href="#none" class="btn_search"><span>검색</span></a>
+                <a href="javascript:history.back();" class="btn_back"><span>뒤로가기</span></a>
+            </section>
+            <!-- //상단타이틀 -->
+
+			<!-- 카테고리 컨텐츠 -->
+            <section class="category_container">
+                <!-- 상단배너 -->
+    			<section class="category_banner fixed"> <!-- Swiper 슬라이드 -->
+    				<div class="swiper-wrapper">
+    					<div class="swiper-slide"><a href="#n"><img src="../images/category/category_banner_1.jpg" alt="가족여행에 딱! 리조트 컬렉션"></a></div>
+    					<div class="swiper-slide"><a href="#n"><img src="../images/category/category_banner_2.jpg" alt="가족여행에 딱! 리조트 컬렉션"></a></div>
+    					<div class="swiper-slide"><a href="#n"><img src="../images/category/category_banner_1.jpg" alt="가족여행에 딱! 리조트 컬렉션"></a></div>
+    				</div>
+    			</section>
+    			<!-- //상단배너 -->
+
+				<!-- 카테고리 내비 -->
+				<div class="category_menu">
+					<div class="left">
+						<ul class="depth1">
+							<li class="active"><a href="#n">주요도시</a></li>
+							<li><a href="#n">아시아</a></li>
+							<li><a href="#n">남태평양</a></li>
+							<li><a href="#n">미주</a></li>
+							<li><a href="#n">유럽</a></li>
+							<li><a href="#n">아프리카</a></li>
+						</ul>
+					</div>
+					<div class="right">
+						<!-- 주요도시 -->
+						<div class="depth2 active">
+							<ul class="depth3">
+								<li><a href="#">발리</a></li>
+								<li><a href="#">푸켓</a></li>
+								<li><a href="#">파타야</a></li>
+								<li><a href="#">코사무이</a></li>
+								<li><a href="#">다낭</a></li>
+								<li><a href="#">나트랑</a></li>
+								<li><a href="#">세부</a></li>
+								<li><a href="#">보라카이</a></li>
+								<li><a href="#">코타키나발루</a></li>
+								<li><a href="#">랑카위</a></li>
+								<li><a href="#">괌</a></li>
+								<li><a href="#">사이판</a></li>
+								<li><a href="#">호놀룰루</a></li>
+								<li><a href="#">칸쿤</a></li>
+								<li><a href="#">몰디브</a></li>
+								<li><a href="#">오키나와</a></li>
+							</ul>
+						</div>
+						<!-- //주요도시 -->
+						<!-- 아시아 -->
+						<ul class="depth2">
+							<li>
+								<p>태국</p>
+								<ul class="depth3">
+									<li><a href="#">푸켓</a></li>
+									<li><a href="#">파타야</a></li>
+									<li><a href="#">치앙마이</a></li>
+									<li><a href="#">후아힌</a></li>
+									<li><a href="#">코사무이</a></li>
+									<li><a href="#">크라비</a></li>
+									<li><a href="#">카오락</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>필리핀</p>
+								<ul class="depth3">
+									<li><a href="#">세부</a></li>
+									<li><a href="#">보라카이</a></li>
+									<li><a href="#">보홀</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>베트남</p>
+								<ul class="depth3">
+									<li><a href="#">다낭</a></li>
+									<li><a href="#">나트랑</a></li>
+									<li><a href="#">푸꾸옥</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>말레이시아</p>
+								<ul class="depth3">
+									<li><a href="#">코타키나발루</a></li>
+									<li><a href="#">랑카위</a></li>
+									<li><a href="#">페낭</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>인도네시아</p>
+								<ul class="depth3">
+									<li><a href="#">발리</a></li>
+									<li><a href="#">롬복</a></li>
+									<li><a href="#">빈탄</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>몰디브</p>
+								<ul class="depth3">
+									<li><a href="#">몰디브</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>일본</p>
+								<ul class="depth3">
+									<li><a href="#">오키나와</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>중국</p>
+								<ul class="depth3">
+									<li><a href="#">하이난</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- //아시아 -->
+						<!-- 남태평양 -->
+						<ul class="depth2">
+							<li>
+								<p>괌</p>
+								<ul class="depth3">
+									<li><a href="#">괌</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>사이판</p>
+								<ul class="depth3">
+									<li><a href="#">사이판</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>호주</p>
+								<ul class="depth3">
+									<li><a href="#">해밀턴 아일랜드</a></li>
+									<li><a href="#">헤이먼 아일랜드</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>프렌치 폴리네시아</p>
+								<ul class="depth3">
+									<li><a href="#">보라보라섬무레아섬</a></li>
+									<li><a href="#">무레아섬</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>피지</p>
+								<ul class="depth3">
+									<li><a href="#">데나라우 섬</a></li>
+									<li><a href="#">말롤로 레일라이 섬</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>뉴칼레도니아</p>
+								<ul class="depth3">
+									<li><a href="#">누메아</a></li>
+									<li><a href="#">일데팡</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- //남태평양 -->
+						<!-- 미주 -->
+						<ul class="depth2">
+							<li>
+								<p>미국</p>
+								<ul class="depth3">
+									<li><a href="#">호놀룰루</a></li>
+									<li><a href="#">마우이</a></li>
+									<li><a href="#">빅아일랜드</a></li>
+									<li><a href="#">카우와이</a></li>
+									<li><a href="#">라나이</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>멕시코</p>
+								<ul class="depth3">
+									<li><a href="#">칸쿤</a></li>
+									<li><a href="#">플라야 델 카르멘</a></li>
+									<li><a href="#">로스카보스</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>도미니카공화국</p>
+								<ul class="depth3">
+									<li><a href="#">푼타카나</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- //미주 -->
+						<!-- 유럽 -->
+						<ul class="depth2">
+							<li>
+								<p>그리스</p>
+								<ul class="depth3">
+									<li><a href="#">산토리니</a></li>
+									<li><a href="#">크레타</a></li>
+									<li><a href="#">미코노스</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>스페인</p>
+								<ul class="depth3">
+									<li><a href="#">이비자</a></li>
+									<li><a href="#">마요르카</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>이탈리아</p>
+								<ul class="depth3">
+									<li><a href="#">소렌토</a></li>
+									<li><a href="#">카프리</a></li>
+									<li><a href="#">아말피</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>프랑스</p>
+								<ul class="depth3">
+									<li><a href="#">프랑스</a></li>
+									<li><a href="#">니스</a></li>
+									<li><a href="#">깐느</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- //유럽 -->
+						<!-- 아프리카 -->
+						<ul class="depth2">
+							<li>
+								<p>세이셸</p>
+								<ul class="depth3">
+									<li><a href="#">세이셸</a></li>
+								</ul>
+							</li>
+							<li>
+								<p>모리셔스</p>
+								<ul class="depth3">
+									<li><a href="#">모리셔스</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- //아프리카 -->
+					</div>
+				</div>
+            </section>
+			<!-- //카테고리 컨텐츠 -->
+
+        </section>
+        <!-- //컨텐츠 -->
+    </div>
+</body>
+</html>

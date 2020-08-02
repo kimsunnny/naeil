@@ -479,10 +479,18 @@ html, body{height:100%;}
 .calendar_wrap .calendar_box .month{margin:30px 0 20px; font-size:16px; font-weight:700;}
 .calendar_wrap .calendar_box table{width:100%;}
 .calendar_wrap .calendar_box table th{font-weight:700; line-height:30px;}
-.calendar_wrap .calendar_box table td{position:relative; padding:5px 0;}
+.calendar_wrap .calendar_box table td{position:relative; padding:5px 0; border: 1px solid #eee; box-sizing: border-box;}
 .calendar_wrap .calendar_box table td span{position:relative; display:inline-block; line-height:30px; vertical-align:middle; z-index:2;}
 .calendar_wrap .calendar_box table .select_day span{width:30px; height:30px; border-radius:50%; background:#068bf2; color:#fff;}
-.calendar_wrap .calendar_box table .select_range span{width:100%; background:#b6dfff;}
+.calendar_wrap .calendar_box table .select_stul li,
+.calendar_wrap .calendar_box table .select_range ul li{width: 103%; height: 10%; display: block; background: red;}
+.calendar_wrap .calendar_box table .select_st ul li:nth-child(1){background: red;}
+.calendar_wrap .calendar_box table .select_st ul li:nth-child(2){background: pink}
+.calendar_wrap .calendar_box table .select_st ul li:nth-child(3){background: cadetblue;}
+.calendar_wrap .calendar_box table .select_range ul li:nth-child(1){background: red;}
+.calendar_wrap .calendar_box table .select_range ul li:nth-child(2){background: pink;}
+.calendar_wrap .calendar_box table .select_range ul li:nth-child(3){background: cadetblue;}
+.calendar_wrap .calendar_box table .select_range span11{width:100%; background:#b6dfff;}
 .calendar_wrap .calendar_box table .select_day + .select_range:before,
 .calendar_wrap .calendar_box table .select_range + .select_day:before{content:''; position:absolute; left:-50%; top:5px; width:100%; height:30px; background:#b6dfff; z-index:1;}
 .calendar_wrap .calendar_box table .sun, .calendar_wrap .calendar_box table .sun span{color:#ff001e;}

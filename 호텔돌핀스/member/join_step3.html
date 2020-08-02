@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>호텔돌핀스</title>
+    <!-- 기본 CSS, JS -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 해당페이지 CSS, JS -->
+    <link rel="stylesheet" href="../css/member.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 컨텐츠 -->
+        <section class="container">
+            <!-- 상단타이틀 -->
+            <section class="section_top_title">
+                <h1>회원가입</h1>
+                <a href="javascript:history.back();" class="btn_back"><span>뒤로가기</span></a>
+            </section>
+            <!-- //상단타이틀 -->
+
+            <!-- 회원가입 -->
+            <div class="member_join_wrap">
+                <!-- 스텝3 -->
+                <h2>회원가입 - 회원 기본 정보 <span>* 필수입력 항목</span></h2>
+
+                <!-- 가입 정보 -->
+                <div class="input_type_common">
+                    <dl class="id_box">
+                        <dt>아이디*</dt>
+                        <dd>
+                            <span class="ipt_text"><input type="text" name="idt1" id="idt1" title="아이디" value="" placeholder="이메일주소로 가입해주세요."></span>
+                            <div class="btn_type_common id_check">
+                                <a href="#none" class="btn_small">중복확인</a>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>한글명*</dt>
+                        <dd>
+                            <span class="ipt_text"><input type="text" name="ipt2" id="ipt2" title="한글명" value=""></span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호*</dt>
+                        <dd>
+                            <span class="ipt_text"><input type="password" name="pwd1" id="pwd1" title="비밀번호" value="" placeholder="영문,숫자,특수문자 조합 6-16자리"></span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>비밀번호 확인*</dt>
+                        <dd>
+                            <span class="ipt_text"><input type="password" name="pwd2" id="pwd2" title="비밀번호확인" value="" placeholder="비밀번호를 재입력하세요."></span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>이메일*</dt>
+                        <dd>
+                            <span class="ipt_text"><input type="email" name="email" id="email" title="이메일" value="" placeholder="이메일주소로 가입해주세요."></span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>휴대폰 번호*</dt>
+                        <dd>
+                            <div class="tel_box">
+                                <span class="select_box">
+                                    <select name="" id="" title="휴대폰 번호 앞자리">
+                                        <option value="0">선택</option>
+                                        <option value="1">선택</option>
+                                        <option value="2">선택</option>
+                                    </select>
+                                </span>
+                                <em>-</em>
+                                <span class="ipt_text"><input type="tel" name="tel2" id="tel2" title="휴대폰 번호 중간자리" value="" maxlength="4"></span>
+                                <em>-</em>
+                                <span class="ipt_text"><input type="tel" name="tel3" id="tel3" title="휴대폰 번호 마지막자리" value="" maxlength="4"></span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>생년월일</dt>
+                        <dd>
+                            <span class="ipt_text"><input type="birth" name="birth" id="birth" title="생년월일" value=""></span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>휴면방지기간</dt>
+                        <dd>
+                            <span class="ipt_radio">
+                                <input type="radio" name="hu_year" id="hu_year01" checked><label for="hu_year01">3년</label>
+                            </span>
+                            <span class="ipt_radio">
+                                <input type="radio" name="hu_year" id="hu_year02"><label for="hu_year02">5년</label>
+                            </span>
+                            <span class="ipt_radio">
+                                <input type="radio" name="hu_year" id="hu_year03"><label for="hu_year03">10년</label>
+                            </span>
+                            <span class="ipt_radio">
+                                <input type="radio" name="hu_year" id="hu_year04"><label for="hu_year04">탈퇴시</label>
+                            </span>
+                        </dd>
+                    </dl>
+                </div>
+
+                <!-- 가입하기 버튼 -->
+                <div class="btn_type_common">
+                    <button type="button" name="button">가입하기</button><!-- [D] 가입완료시 alert창 내용은 '회원가입을 축하합니다!'  -->
+                </div>
+            </div>
+            <!-- //회원가입 -->
+
+        </section>
+        <!-- //컨텐츠 -->
+
+    </div>
+</body>
+</html>

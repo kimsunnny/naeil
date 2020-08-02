@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>호텔돌핀스</title>
+    <!-- 기본 CSS, JS -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 해당페이지 CSS, JS -->
+    <link rel="stylesheet" href="../css/mypage.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 컨텐츠 -->
+        <section class="container">
+            <!-- 상단타이틀 -->
+            <section class="section_top_title">
+                <h1>내 포인트</h1>
+                <a href="javascript:history.back();" class="btn_back"><span>뒤로가기</span></a>
+            </section>
+            <!-- //상단타이틀 -->
+
+            <!-- 마이페이지 -->
+            <section class="mypage_container">
+                <div class="point_box">
+                    <dl class="total">
+                        <dt>사용가능 포인트</dt><dd>10,000P</dd>
+                    </dl>
+                    <dl>
+                        <dt>당월 소멸 예정</dt><dd>2,500P</dd>
+                    </dl>
+                </div>
+                <div class="point_list">
+                    <p class="txt">적립 포인트는 상품 사용일 다음날 적립됩니다.</p>
+
+                    <!-- 리스트 -->
+                    <ul>
+                        <li class="use">
+                            <span class="date">2019.01.01</span>
+                            <p><span>사용</span> - 상품(180618006)</p>
+                            <em>1,000P</em>
+                        </li>
+                        <li class="save">
+                            <span class="date">2019.01.01</span>
+                            <p><span>적립</span> - 상품(180618006)</p>
+                            <em>2,000P</em>
+                        </li>
+                        <li class="save">
+                            <span class="date">2019.01.01</span>
+                            <p><span>적립</span> - 상품(180618006)</p>
+                            <em>2,000P</em>
+                        </li>
+                        <li class="save">
+                            <span class="date">2019.01.01</span>
+                            <p><span>적립</span> - 상품(180618006)</p>
+                            <em>2,000P</em>
+                        </li>
+                        <li class="use">
+                            <span class="date">2019.01.01</span>
+                            <p><span>사용</span> - 상품(180618006)</p>
+                            <em>1,000P</em>
+                        </li>
+                        <li class="use">
+                            <span class="date">2019.01.01</span>
+                            <p><span>사용</span> - 상품(180618006)</p>
+                            <em>1,000P</em>
+                        </li>
+                    </ul>
+
+                    <!-- [D] 포인트 없을 때 -->
+                    <p class="txt_no_list">현재 적립된 포인트가 없습니다.</p>
+                </div>
+            </section>
+            <!-- //마이페이지 -->
+
+        </section>
+        <!-- //컨텐츠 -->
+
+        <!-- 푸터 -->
+		<footer id="footer">
+			<!-- SNS -->
+			<div class="footer_sns_wrap">
+				<ul class="sns_list">
+					<li class="sns_youtube"><!-- 유투브 -->
+						<a href="https://www.youtube.com/user/Naeiltour" target="_blank">
+							<img src="http://www.naeiltour.co.kr/_Img/Layout/ficon-youtube.png" alt="내일투어 유투브" />
+						</a>
+					</li>
+					<li class="sns_blog"><!-- 블로그 -->
+						<a href="http://m.blog.naver.com/naeiltour" target="_blank">
+							<img src="http://www.naeiltour.co.kr/app/images/common/sns_blog.png" alt="내일투어 블로그" />
+						</a>
+					</li>
+					<li class="sns_post"><!-- 포스트 -->
+						<a href="https://post.naver.com/my.nhn?memberNo=468034" target="_blank">
+							<img src="http://www.naeiltour.co.kr/_Img/Layout/ficon-write.png" alt="내일투어 네이버포스트" />
+						</a>
+					</li>
+					<li class="sns_insta"><!-- 인스타 -->
+						<a href="https://www.instagram.com/naeiltour.co.kr/" target="_blank">
+							<img src="http://www.naeiltour.co.kr/app/images/common/sns_insta.png" alt="내일투어 인스타그램" />
+						</a>
+					</li>
+					<li class="sns_facebook"><!-- 페이스북 -->
+						<a href="https://m.facebook.com/naeiltour.co.kr/?ref=bookmarks" target="_blank">
+							<img src="http://www.naeiltour.co.kr/app/images/common/sns_fb.png" alt="내일투어 페이스북" />
+						</a>
+					</li>
+					<li class="sns_kakao"><!-- 카톡 -->
+						<a href="https://pf.kakao.com/_BvswE" target="_blank">
+							<img src="http://www.naeiltour.co.kr/app/images/common/sns_kakao.png" alt="내일투어 카카오" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_bottom_wrap">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="/">호텔돌핀스 홈</a></li> <!-- 20191104 텍스트 및 링크 수정 -->
+						<li><a href="http://www.naeiltour.co.kr/app/company/useInfo.asp">이용약관</a></li>
+						<li><a href="http://www.naeiltour.co.kr/app/reserve/reserve_pop04.asp"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="http://www.naeiltour.co.kr/app/reserve/reserve_pop01.asp">여행약관</a></li>
+						<li><a href="#n">pc보기</a></li>
+					</ul>
+				</div>
+				<div class="footer_info">
+					<h1><img src="http://www.naeiltour.co.kr/app/images/common/footer_logo.png" alt="내일투어" /></h1> <!-- 20191104 로고 링크 삭제 -->
+					<p class="footer_address">
+						대표이사:이진석<br/>
+						서울시 중구 세종대로11길 43 내일투어빌딩<br/>
+						개인정보관리책임자:김경윤/사업자등록번호:110-81-33092<br/>
+						통신판매업신고번호:중구 제03285호/master@naeiltour.co.kr<br/>
+						관광사업자등록번호:중구 제 2001-07호<br/>
+					</p>
+					<p class="footer_copyright">Copyright&copy;1995-2018 Naeil Tour.,Ltd. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- //푸터 -->
+    </div>
+</body>
+</html>

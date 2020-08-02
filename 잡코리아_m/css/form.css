@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/* ---------------------------------
+FORM CSS
+--------------------------------- */
+input[type=tel],
+input[type=time],
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=email],
+input[type=file],
+input[type=url],
+input[type=number],
+input[type=date],textarea {}
+input::-webkit-input-placeholder{}
+select:focus,
+textarea:focus,
+input:focus {}
+
+input[type=tel][readonly],
+input[type=text][readonly],
+input[type=password][readonly],
+input[type=email][readonly], 
+input[type=search][readonly], 
+input[type=tel][disabled],
+input[type=text][disabled],
+input[type=password][disabled],
+input[type=search][disabled],
+input[type=email][disabled]{}
+textarea[readonly],
+textarea[disabled]{}
+
+
+/* placeholder */
+input::placeholder{font-family:'Noto Sans KR', AppleGothic, sans-serif, Arial; font-size:14px; color:#b4b4b4; opacity: 1;} /* 파이어폭스에서 뿌옇게 나오는 현상을 방지하기 위한 css */
+input::-webkit-input-placeholder{font-family:'Noto Sans KR', AppleGothic, sans-serif, Arial; font-size:14px; color:#b4b4b4;} /* IE */
+input:-ms-input-placeholder{font-family:'Noto Sans KR', AppleGothic, sans-serif, Arial; font-size:14px; color:#b4b4b4;} /* Firefox */
+input:-mos-input-placeholder{font-family:'Noto Sans KR', AppleGothic, sans-serif, Arial; font-size:14px; color:#b4b4b4;}
+
+/* input */
+.ipt_text{position:relative; display:block;}
+.ipt_text input{width:100%; height:40px; padding:5px 10px; background:#f5f5f5; border:1px solid #f5f5f5; border-radius:5px; color:#171717; line-height:40px;}
+.ipt_text input:-moz-read-only{background:#fff; border:1px solid #e1e1e1;} /* For Firefox */
+.ipt_text input:read-only{background:#fff; border:1px solid #e1e1e1;}
+.ipt_text input:-moz-read-only:focus{border-color:#e1e1e1;} /* For Firefox */
+.ipt_text input:read-only:focus{border-color:#e1e1e1;}
+.ipt_text input:focus{outline:none; border-color:#068bf2; background:#fff;}
+.ipt_text input:disabled{background:#fff; border:1px solid #e1e1e1; opacity:1; -webkit-text-fill-color:inherit}
+
+/* input_search */
+.search_input_box{position:relative;}
+.search_input_box + .search_input_box{margin-top:3px;}
+.search_input_box .ipt_text input{height:42px; padding-left:40px; background:#fff; border-radius:10px; line-height:40px;}
+.search_input_box .ipt_text:before{content:''; position:absolute; left:10px; top:50%; width:20px; height:20px; margin-top:-10px; background: url(../images/icon_search_spr.png) no-repeat 0 0; background-size:20px auto;}
+.search_input_box .ipt_text.focus:before{background-position:0 -20px;}
+.search_input_box .btn_keyword_del{position:absolute; right:10px; top:50%; width:20px; height:20px; margin-top:-10px; background:url(../images/icon_delete.png) no-repeat 0 0; background-size:20px; text-indent:-9999px; display:none;}
+
+/* input_checkbox */
+.ipt_chk{position:relative; display:inline-block; margin-top:2px;}
+.ipt_chk input{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;}
+.ipt_chk input + label{display:inline-block; position:relative; font-size:13px; color:#636363; cursor:pointer; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;}
+.ipt_chk input + label:before{content:''; display:inline-block; width:12px; height:12px; margin:-2px 5px 0 0; background: url(../images/icon_check_spr.png) no-repeat 0 0; background-size:12px auto; line-height:12px; vertical-align:middle;}
+.ipt_chk input:checked + label{color:#068bf2;}
+.ipt_chk input:checked + label:before{background-position:0 -12px; border-color:#068bf2;}
+.ipt_chk input:disabled + label{color:#d2d2d2;}
+.ipt_chk input:disabled + label:before{background:#e6e6e6;}
+
+.ipt_chk.type2 input + label{font-size:14px; color:#9d9d9d;}
+.ipt_chk.type2 input + label:before{background-image:url(../images/icon_check2_spr.png);}
+.ipt_chk.type2 input:checked + label{color:#444;}
+
+/* input_radio */
+.ipt_radio{position:relative; display:inline-block; margin-top:2px;}
+.ipt_radio + .ipt_radio{margin-left:20px;}
+.ipt_radio input{position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); border:0;}
+.ipt_radio input + label{display:inline-block; position:relative; font-size:14px; color:#858585; cursor:pointer; -webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;}
+.ipt_radio input + label:before{content:''; display:inline-block; width:12px; height:12px; margin:-2px 5px 0 0; background: url(../images/icon_radio_spr.png) no-repeat 0 0; background-size:12px auto; line-height:14px; vertical-align:middle;}
+.ipt_radio input:checked + label{color:#000;}
+.ipt_radio input:checked + label:before{background-position:0 -12px;}
+
+.ipt_radio.type2 input + label:before{width:18px; height:18px; margin:-2px 5px 0 0; background: url(../images/icon_radio2_spr.png) no-repeat 0 0; background-size:18px auto;}
+.ipt_radio.type2 input:checked + label:before{background-position:0 -18px;}
+
+/*11.11추가*/
+.ipt_radio.type3 input + label{border-radius:5px 0 0 5px;}
+.ipt_radio.type3:nth-of-type(2) input + label{border-radius:0 5px 5px 0;}
+.ipt_radio.type3:nth-of-type(2) input:checked + label{border-radius:5px;}
+.ipt_radio.type3, .ipt_radio.type3 + .ipt_radio{margin:0; width:50%; float:left;}
+.ipt_radio.type3 input + label{background:#f5f5f5; width: 100%; height: 40px; border-radius: 5px; color: #858585; line-height: 40px; text-align:center;}
+.ipt_radio.type3 input:checked + label{background:#068bf2; color:#fff;}
+.ipt_radio.type3 input + label:before{display:none;}
+/*//11.11추가*/
+
+/* select */
+.select_box{display:inline-block; width:100%; height:40px; padding:3px 0; background:#f5f5f5; border-radius:5px;}
+.select_box select{width:100%; height:34px; padding:0 10px; border:0 none; -webkit-appearance:none; -moz-appearance:none; appearance:none; background: url(../images/icon_select_arrow.png) no-repeat 94% 50%; background-size:11px; font-size:14px; color:#181818;}
+.select_box select::-ms-expand{display:none;}
+
+/* textarea */
+.textarea_box{display:block; width:100%; min-height:40px; padding:10px; background:#f5f5f5; border-radius:5px; color:#171717; resize:none;}
+.textarea_box:-moz-read-only{background:#fff; border:1px solid #e1e1e1;} /* For Firefox */
+.textarea_box:read-only{background:#fff; border:1px solid #e1e1e1;}
+.textarea_box:read-only:focus{border-color:#e1e1e1;}
+.textarea_box:focus{outline:none; border:1px solid #068bf2; background:#fff;}
+.textarea_box:disabled{background:#fff; border:1px solid #e1e1e1; opacity:1; -webkit-text-fill-color:inherit}

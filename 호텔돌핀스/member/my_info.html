@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>호텔돌핀스</title>
+    <!-- 기본 CSS, JS -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 해당페이지 CSS, JS -->
+    <link rel="stylesheet" href="../css/mypage.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 컨텐츠 -->
+        <section class="container">
+            <!-- 상단타이틀 -->
+            <section class="section_top_title">
+                <h1>회원정보 수정</h1>
+                <a href="javascript:history.back();" class="btn_back"><span>뒤로가기</span></a>
+            </section>
+            <!-- //상단타이틀 -->
+
+            <!-- 마이페이지 -->
+            <section class="mypage_container">
+                <!-- 회원정보 수정 -->
+                <div class="input_type_common inner">
+                    <dl>
+                        <dt>아이디</dt>
+                        <dd>
+                            <span class="ipt_text"><input type="text" name="ipt1" id="ipt1" title="아이디" value=""></span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>한글명</dt>
+                        <dd>
+                            <span class="ipt_text"><input type="text" name="ipt2" id="ipt2" title="한글명" value=""></span>
+                        </dd>
+                    </dl>
+                    <div class="dl_box eng">
+                        <dl>
+                            <dt>영문성</dt>
+                            <dd>
+                                <span class="ipt_text"><input type="text" name="ipt02" id="ipt02" title="영문성" value=""></span>
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>영문이름</dt>
+                            <dd>
+                                <span class="ipt_text"><input type="text" name="ipt03" id="ipt03" title="영문이름" value=""></span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <dl>
+                        <dt>이메일</dt>
+                        <dd>
+                            <span class="ipt_text"><input type="email" name="email" id="email" title="이메일" value=""></span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>휴대폰 번호</dt>
+                        <dd>
+                            <div class="tel_box">
+                                <span class="select_box">
+                                    <select name="" id="" title="휴대폰 번호 앞자리">
+                                        <option value="0">선택</option>
+                                        <option value="1">선택</option>
+                                        <option value="2">선택</option>
+                                    </select>
+                                </span>
+                                <em>-</em>
+                                <span class="ipt_text"><input type="tel" name="tel2" id="tel2" title="휴대폰 번호 중간자리" value=""></span>
+                                <em>-</em>
+                                <span class="ipt_text"><input type="tel" name="tel3" id="tel3" title="휴대폰 번호 마지막자리" value=""></span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>휴면방지기간</dt>
+                        <dd>
+                            <span class="ipt_radio">
+                                <input type="radio" name="hu_year" id="hu_year01" checked><label for="hu_year01">3년</label>
+                            </span>
+                            <span class="ipt_radio">
+                                <input type="radio" name="hu_year" id="hu_year02"><label for="hu_year02">5년</label>
+                            </span>
+                            <span class="ipt_radio">
+                                <input type="radio" name="hu_year" id="hu_year03"><label for="hu_year03">10년</label>
+                            </span>
+                            <span class="ipt_radio">
+                                <input type="radio" name="hu_year" id="hu_year04"><label for="hu_year04">탈퇴시</label>
+                            </span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>SMS수신여부</dt>
+                        <dd>
+                            <span class="ipt_radio">
+                                <input type="radio" name="sms" id="sms01" checked><label for="sms01">예</label>
+                            </span>
+                            <span class="ipt_radio">
+                                <input type="radio" name="sms" id="sms02"><label for="sms02">아니오</label>
+                            </span>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>메일수신여부</dt>
+                        <dd>
+                            <span class="ipt_radio">
+                                <input type="radio" name="mail" id="mail01" checked><label for="mail01">예</label>
+                            </span>
+                            <span class="ipt_radio">
+                                <input type="radio" name="mail" id="mail02"><label for="mail02">아니오</label>
+                            </span>
+                        </dd>
+                    </dl>
+
+                    <div class="btn_type_common">
+                        <button type="button" name="button">기본정보변경</button>
+                    </div>
+                </div>
+
+                <div class="member_out_txt">
+                    <p>회원탈퇴를 원하시면 회원탈퇴 버튼을 눌러주세요</p>
+                    <a href="#none" class="btn">회원탈퇴</a>
+                </div>
+            </section>
+            <!-- //마이페이지 -->
+
+        </section>
+        <!-- //컨텐츠 -->
+
+        <!-- 푸터 -->
+		<footer id="footer">
+			<!-- SNS -->
+			<div class="footer_sns_wrap">
+				<ul class="sns_list">
+					<li class="sns_youtube"><!-- 유투브 -->
+						<a href="https://www.youtube.com/user/Naeiltour" target="_blank">
+							<img src="http://www.naeiltour.co.kr/_Img/Layout/ficon-youtube.png" alt="내일투어 유투브" />
+						</a>
+					</li>
+					<li class="sns_blog"><!-- 블로그 -->
+						<a href="http://m.blog.naver.com/naeiltour" target="_blank">
+							<img src="http://www.naeiltour.co.kr/app/images/common/sns_blog.png" alt="내일투어 블로그" />
+						</a>
+					</li>
+					<li class="sns_post"><!-- 포스트 -->
+						<a href="https://post.naver.com/my.nhn?memberNo=468034" target="_blank">
+							<img src="http://www.naeiltour.co.kr/_Img/Layout/ficon-write.png" alt="내일투어 네이버포스트" />
+						</a>
+					</li>
+					<li class="sns_insta"><!-- 인스타 -->
+						<a href="https://www.instagram.com/naeiltour.co.kr/" target="_blank">
+							<img src="http://www.naeiltour.co.kr/app/images/common/sns_insta.png" alt="내일투어 인스타그램" />
+						</a>
+					</li>
+					<li class="sns_facebook"><!-- 페이스북 -->
+						<a href="https://m.facebook.com/naeiltour.co.kr/?ref=bookmarks" target="_blank">
+							<img src="http://www.naeiltour.co.kr/app/images/common/sns_fb.png" alt="내일투어 페이스북" />
+						</a>
+					</li>
+					<li class="sns_kakao"><!-- 카톡 -->
+						<a href="https://pf.kakao.com/_BvswE" target="_blank">
+							<img src="http://www.naeiltour.co.kr/app/images/common/sns_kakao.png" alt="내일투어 카카오" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer_bottom_wrap">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="/">호텔돌핀스 홈</a></li> <!-- 20191104 텍스트 및 링크 수정 -->
+						<li><a href="http://www.naeiltour.co.kr/app/company/useInfo.asp">이용약관</a></li>
+						<li><a href="http://www.naeiltour.co.kr/app/reserve/reserve_pop04.asp"><strong>개인정보처리방침</strong></a></li>
+						<li><a href="http://www.naeiltour.co.kr/app/reserve/reserve_pop01.asp">여행약관</a></li>
+						<li><a href="#n">pc보기</a></li>
+					</ul>
+				</div>
+				<div class="footer_info">
+					<h1><img src="http://www.naeiltour.co.kr/app/images/common/footer_logo.png" alt="내일투어" /></h1> <!-- 20191104 로고 링크 삭제 -->
+					<p class="footer_address">
+						대표이사:이진석<br/>
+						서울시 중구 세종대로11길 43 내일투어빌딩<br/>
+						개인정보관리책임자:김경윤/사업자등록번호:110-81-33092<br/>
+						통신판매업신고번호:중구 제03285호/master@naeiltour.co.kr<br/>
+						관광사업자등록번호:중구 제 2001-07호<br/>
+					</p>
+					<p class="footer_copyright">Copyright&copy;1995-2018 Naeil Tour.,Ltd. All rights reserved.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- //푸터 -->
+    </div>
+</body>
+</html>

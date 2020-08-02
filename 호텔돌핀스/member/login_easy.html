@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>호텔돌핀스</title>
+    <!-- 기본 CSS, JS -->
+    <script type="text/javascript" src="../js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <link rel="stylesheet" href="../css/common.css">
+    <!-- 슬라이드 CSS, JS -->
+    <script src="../js/swiper.min.js"></script>
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <!-- 해당페이지 CSS, JS -->
+    <link rel="stylesheet" href="../css/member.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 컨텐츠 -->
+        <section class="container">
+            <!-- 상단타이틀 -->
+            <section class="section_top_title">
+                <h1>간편 로그인</h1>
+                <a href="javascript:history.back();" class="btn_back"><span>뒤로가기</span></a>
+            </section>
+            <!-- //상단타이틀 -->
+
+			<section class="member_login_wrap">
+                <form action="">
+                    <!-- tab -->
+                    <div class="tab_type_common tab_fn">
+                        <ul class="col2">
+                            <li class="on"><span>로그인</span></li>
+                            <li><span>회원가입</span></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab_contents">
+                        <!-- 회원 로그인 -->
+                        <div class="cont active">
+                            <!-- 로그인 -->
+                            <div class="login_box">
+                                <span class="ipt_text"><input type="text" name="user_id" id="user_id" placeholder="아이디(이메일 주소)를 입력하세요"></span>
+                                <span class="ipt_text"><input type="password" name="user_pw" id="user_pw" placeholder="비밀번호를 입력하세요"></span>
+                                <div class="btn_type_common">
+                                    <button type="button" name="button">로그인</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 회원가입 -->
+                        <div class="cont">
+                            <div class="member_join_wrap">
+                                <!-- 스텝1_약관 -->
+                                <h2>이용 약관 동의</h2>
+                                <div class="term_check_box">
+                                    <ul>
+                                        <li>
+                                            <span class="ipt_chk">
+                                                <input type="checkbox" name="chk_term2" id="chk_term2"><label for="chk_term2">내일투어 회원약관 (필수)</label>
+                                            </span>
+                                            <a href="https://www.naeiltour.co.kr/app/member/join_popup02.asp" class="btn_more_term"><span>상세보기</span></a>
+                                        </li>
+                                        <li>
+                                            <span class="ipt_chk">
+                                                <input type="checkbox" name="chk_term3" id="chk_term3"><label for="chk_term3">개인정보수집 및 이용에 대한 안내 (필수)</label>
+                                            </span>
+                                            <a href="https://www.naeiltour.co.kr/app/member/join_popup03.asp" class="btn_more_term"><span>상세보기</span></a>
+                                        </li>
+                                        <li>
+                                            <span class="ipt_chk">
+                                                <input type="checkbox" name="chk_term5" id="chk_term5"><label for="chk_term5">개인정보처리방침 '제 3자 제공' (필수)</label>
+                                            </span>
+                                            <a href="https://www.naeiltour.co.kr/app/reserve/reserve_pop08.asp" class="btn_more_term"><span>상세보기</span></a>
+                                        </li>
+                                        <li>
+                                            <span class="ipt_chk">
+                                                <input type="checkbox" name="chk_term4" id="chk_term4"><label for="chk_term4">마케팅 및 광고에 활용안내 (선택)</label>
+                                            </span>
+                                            <a href="https://www.naeiltour.co.kr/app/reserve/reserve_pop05.asp" class="btn_more_term"><span>상세보기</span></a>
+                                        </li>
+                                        <li class="all">
+                                            <span class="ipt_chk">
+                                                <input type="checkbox" name="chk_all" id="chk_all"><label for="chk_all">위의 내용에 모두 동의합니다.</label>
+                                            </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- //스텝1_약관 -->
+
+                                <!-- 스텝2_가입 정보 -->
+                                <h2>회원 기본 정보 <span>* 필수입력 항목</span></h2>
+                                <div class="input_type_common">
+                                    <dl class="id_box">
+                                        <dt>아이디*</dt>
+                                        <dd>
+                                            <span class="ipt_text"><input type="text" name="idt1" id="idt1" title="아이디" value="" placeholder="이메일주소로 가입해주세요."></span>
+                                            <div class="btn_type_common id_check">
+                                                <a href="#none" class="btn_small">중복확인</a>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>한글명*</dt>
+                                        <dd>
+                                            <span class="ipt_text"><input type="text" name="ipt2" id="ipt2" title="한글명" value=""></span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>생년월일</dt>
+                                        <dd>
+                                            <span class="ipt_text"><input type="birth" name="birth" id="birth" title="생년월일" value=""></span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>휴대폰 번호*</dt>
+                                        <dd>
+                                            <div class="tel_box">
+                                                <span class="select_box">
+                                                    <select name="" id="" title="휴대폰 번호 앞자리">
+                                                        <option value="0">선택</option>
+                                                        <option value="1">선택</option>
+                                                        <option value="2">선택</option>
+                                                    </select>
+                                                </span>
+                                                <em>-</em>
+                                                <span class="ipt_text"><input type="tel" name="tel2" id="tel2" title="휴대폰 번호 중간자리" value="" maxlength="4"></span>
+                                                <em>-</em>
+                                                <span class="ipt_text"><input type="tel" name="tel3" id="tel3" title="휴대폰 번호 마지막자리" value="" maxlength="4"></span>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>성별</dt>
+                                        <dd>
+                                            <span class="select_box">
+                                                <select name="" id="" title="성별">
+                                                    <option value="0">선택</option>
+                                                    <option value="1">선택</option>
+                                                    <option value="2">선택</option>
+                                                </select>
+                                            </span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>SMS수신여부</dt>
+                                        <dd>
+                                            <span class="ipt_radio">
+                                                <input type="radio" name="sms" id="sms01" checked><label for="sms01">예</label>
+                                            </span>
+                                            <span class="ipt_radio">
+                                                <input type="radio" name="sms" id="sms02"><label for="sms02">아니오</label>
+                                            </span>
+                                        </dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>이메일수신여부</dt>
+                                        <dd>
+                                            <span class="ipt_radio">
+                                                <input type="radio" name="mail" id="mail01" checked><label for="mail01">예</label>
+                                            </span>
+                                            <span class="ipt_radio">
+                                                <input type="radio" name="mail" id="mail02"><label for="mail02">아니오</label>
+                                            </span>
+                                        </dd>
+                                    </dl>
+                                    <div class="guide_txt">
+                                        <p>이메일, SMS를 통해 이벤트 및 할인행사 안내를 드립니다.</p>
+                                    </div>
+                                </div>
+
+                                <div class="btn_type_common col2">
+                                    <button type="button" name="button" class="btn_light">취소하기</button>
+                                    <button type="button" name="button">가입하기</button>
+                                </div>
+                                <!-- //스텝2_가입 정보 -->
+                            </div>
+                        </div>
+                        <!-- //회원가입 -->
+                    </div>
+                </form>
+            </section>
+
+        </section>
+        <!-- //컨텐츠 -->
+    </div>
+</body>
+</html>
