@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0">
+  <title>Document</title>
+  <style>
+      *{margin: 0; padding: 0;}
+      a{text-decoration: none; color: inherit; }
+      ul{list-style: none; }
+      html,body{width: 100%; height: 100%; background: #eee; }
+      #mask{overflow: hidden; position: relative; width: 100%; height: 600px; background: #333; }
+      #gall{position: relative; top: 50px; left: 0; height: 500px; width: 100%; overflow-x: scroll; background: orange; }
+      #gall li{position: absolute; top: 0; background: pink; width: 90%; height: 500px; background: lightgray; border: 1px solid red; box-sizing: border-box; }
+      #set1{left: 0;}
+      #set2{left: 100%;}
+      #set3{left: 200%;}
+      
+  </style>
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script>
+    $(function(){
+        var m=setInterval(motion,10)
+        var x=0;
+        var s=-1;
+        var center=$(document).width()/2;//기준
+        function motion(){
+            x=x+s;
+            if(x<-300){x=0
+            }else if(x>0){x=-300
+            }
+            $('#gall').css({left:x})
+        }
+        $('#mask').mousemove(function(e){
+            s=(e.pageX-center)*0.05
+        })
+        $('#gall li').on({
+            mouseenter:function(){
+                clearInterval(m)
+            },mouseleave:function(){
+                m=setInterval(motion,10)
+            }
+        })
+        
+    })
+  </script>
+ </head>
+ <body>
+    <div id="mask">
+        <ul id="gall">
+            <li id="set1"><a href="#">01</a></li>
+            <li id="set2"><a href="#">02</a></li>
+            <li id="set3"><a href="#">03</a></li>
+        </ul>
+    </div>
+ </body>
+</html>
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
