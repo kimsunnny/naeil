@@ -17,10 +17,13 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/category.css">
 	<style>
-		.btn_fixed{position: fixed; bottom: 0; left: 0; width: 100%; height: 50px; background: #fc0; color: #000; z-index: 999; text-align: center; line-height: 50px; cursor: pointer;;}
+		#wrapper{display: block; width: 100%; height: 100%; left: 0; top: 0; position: absolute; z-index: 0;}
+		.btn_fixed{position: fixed; bottom: 0; left: 0; width: 100%; height: 50px; background: #ddd; color: #000; z-index: 999; text-align: center; line-height: 50px; cursor: pointer;;}
+		.btn_fixed button{display: block;;}
 	</style>
 </head>
 <body>
+<div id="wrapper">
 	<div id="wrap">
         <!-- 헤더 -->
 		<header id="header">
@@ -923,5 +926,6 @@
 		</div>
 		<!-- //fixed footer -->
 	</div>
+</div>
 </body>
 </html>
