@@ -25,13 +25,22 @@
             padding-bottom: 12rem;
         }
 
-        .input_default_wrap{border: 1px solid blue;}
-        .input_test_wrap{border: 1px solid red;}
+        .input_default_wrap{border: 1px solid skyblue;}
+        .input_test_wrap{border: 1px solid pink;}
+        
+        .input_test_wrap input{-webkit-appearance: none; background-color: transparent;}
+        
+        .input_test_wrap input[type=date]::inner-spin-button,
+        .input_test_wrap input[type=time]::inner-spin-button,
+        .input_test_wrap input[type=date]::clear-button,
+        .input_test_wrap input[type=time]::clear-button{display: none;}
+        .input_test_wrap input[type=date]::datetime-edit-text{display: none; padding: 0 1rem;}
+        
         .input_test_wrap input[type=date]::-webkit-inner-spin-button,
         .input_test_wrap input[type=time]::-webkit-inner-spin-button,
         .input_test_wrap input[type=date]::-webkit-clear-button,
         .input_test_wrap input[type=time]::-webkit-clear-button{display: none;}
-        .input_test_wrap input[type=date]::-webkit-datetime-edit-text{display: none; padding: 0 0.6rem;}
+        .input_test_wrap input[type=date]::-webkit-datetime-edit-text{display: none; padding: 0 1rem;}
 
 
     </style>
