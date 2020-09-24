@@ -27,15 +27,12 @@
 
         .input_default_wrap{border: 1px solid pink; padding: 10%; }
         .input_test_wrap{border: 1px solid #ddd; padding: 10%; }
+        .input_test_wrap .inner{width: 100%; border: 1px solid blue; border-bottom: 1px solid #eee; margin:0 auto;}
+        .input_test_wrap input{display: inline-block; width: 170px; height: 3rem; padding-left: 30px; 
+            background-color: transparent; border: 1px solid orange; font-size: 16px; font-weight: bold;}
         
-        .input_test_wrap input{background-color: transparent; border: 1px solid pink; width: 170px; height: 3rem; 
-                display: inline-block; padding-left: 30px;}
-        .input_test_wrap .inner{width: 100%; border: 1px solid blue; border-bottom: 1px solid #eee; text-align: center; margin:0 auto;}
-        
-        
-        
-        .input_test_wrap input:focus{border-bottom: 1px solid #fc0;}
-        
+   
+        .input_test_wrap input[type=date]::calendar-picker-indicator,
         .input_test_wrap input[type=date]::inner-spin-button,
         .input_test_wrap input[type=time]::inner-spin-button,
         .input_test_wrap input[type=date]::clear-button,
@@ -44,12 +41,12 @@
         
         
         
-        .input_test_wrap input[type=date]::-webkit-calendar-picker-indicator{display:block; width: 1px; height:10px; background:pink}
+        .input_test_wrap input[type=date]::-webkit-calendar-picker-indicator,
         .input_test_wrap input[type=date]::-webkit-inner-spin-button,
         .input_test_wrap input[type=time]::-webkit-inner-spin-button,
         .input_test_wrap input[type=date]::-webkit-clear-button,
         .input_test_wrap input[type=time]::-webkit-clear-button{-webkit-appearance: none; display: none;}
-        .input_test_wrap input[type=date]::-webkit-datetime-edit-text{-webkit-appearance: none; display: none; padding: 0 1rem;}
+        .input_test_wrap input[type=date]::-webkit-datetime-edit-text{-webkit-appearance: none; display: none;}
     
 
         .input_test_wrap input[type=date]::datetime-edit-day-field,
