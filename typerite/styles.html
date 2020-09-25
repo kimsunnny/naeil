@@ -25,7 +25,27 @@
             padding-bottom: 12rem;
         }
 
-        .input_default_wrap{background-color: #eee; padding: 10%; margin: 3rem 0;}
+        .input_default_wrap{padding: 10%; margin: 3rem 0;}
+        .input_default_wrap{border: 1px solid #ddd; padding: 10%; }
+        .input_default_wrap .input_wrap{
+          width: auto;
+          height: 3rem;
+          margin: 0 auto;
+          overflow: auto;
+          background: #eee;
+        }
+        .input_default_wrap .input_wrap input{
+              background-color: transparent; border: 1px solid red; font-size: 16px; font-weight: bold;
+              -webkit-appearance: none;
+              font-style: 'malgun gothic', '맑은 고딕', sans-serif;
+              width: auto;
+              padding-left: 30px;
+              display: block;
+              margin: 0 auto;
+              box-sizing: border-box;
+        }
+        
+        
         
         .input_test_wrap{border: 1px solid #ddd; padding: 10%; }
         .input_test_wrap .input_wrap{
@@ -33,7 +53,7 @@
           height: 3rem;
           margin: 0 auto;
           overflow: auto;
-          background: pink;
+          background: #eee;
         }
         .input_test_wrap .input_wrap input{
               background-color: transparent; border: 1px solid pink; font-size: 16px; font-weight: bold;
@@ -47,13 +67,13 @@
         }
 
         
-        /*
+        
         .input_test_wrap .input_wrap input::-webkit-inner-spin-button,
         .input_test_wrap .input_wrap input::-webkit-clear-button,
         .input_test_wrap .input_wrap input::-webkit-calendar-picker-indicator{
           display: none;
         }
-        */
+        
         
         
         
@@ -214,12 +234,9 @@
                             </p>
                             <div class="input_test_wrap">
                                 <div class="input_wrap"><input type="date" name="" id="" value="2020-09-20"></div>
-                                
-<!--                                 <input type="time" name="" id=""> -->
                             </div>
                             <div class="input_default_wrap">
-                                <input type="date" name="" id="">
-                                <input type="time" name="" id="">
+                                <div class="input_wrap"><input type="date" name="" id="" value="2000-09-20"></div>
                             </div>
                         </div>
                     </div>
