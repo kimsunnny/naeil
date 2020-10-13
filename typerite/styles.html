@@ -26,15 +26,16 @@
             padding-bottom: 12rem;
         }
         
-        body{background: #fff !important;
+        body{background: #ddd !important;
 /*         padding: 15px 0 calc(constant(safe-area-inset-bottom) + 15px) !important;
         padding: 15px 0 calc(env(safe-area-inset-bottom) + 15px) !important; */
         }
         
         
-        .s-wrap{border: 1px solid red; position: fixed; top: 78px; left: 0; right: 0; height: 100%; }
+        .s-wrap{border: 1px solid red; position: fixed; top: 0; left: 0; right: 0; height: 100%; overflow: hidden;}
         }
-        .s-content{height: 1000px; overflow-y: hidden;}
+        .s-content{height: 100%; overflow-y: auto;}
+        .s-content::-webkit-scrollbar{display: none;}
         
         .input_test_wrap{border: 1px solid pink; padding: 1%; display: flex; align-items: center; }
         .input_test_wrap .arrow{line-height: 3rem; }
