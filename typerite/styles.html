@@ -118,10 +118,9 @@
         }
         */
         
-        .s-wrap{border: 1px solid blue; position: fixed; top: 0; left: 0; right: 0; height: 100%; overflow: hidden;}
+        .s-wrap{border: 1px solid red; position: fixed; top: 0; left: 0; right: 0; height: 100%; overflow: hidden;}
         }
-        .s-content{height: 100%; overflow-y: auto;}
-        .s-content::-webkit-scrollbar{display: none;}
+        
 
     </style>
 
@@ -242,9 +241,12 @@
 
         <!-- site content
         ================================================== -->
-        <div class="s-content content" style="height: 100%; overflow-y: auto;">
+        <div class="s-content content">
             <main class="row s-styles">
-                
+                <style>
+                    .s-content{height: 100%; overflow-y: auto;}
+                    .s-content::-webkit-scrollbar{display: none;}
+                </style>
                 <!-- styles
                 ================================================== -->
                 <section id="styles" class="column large-full">
