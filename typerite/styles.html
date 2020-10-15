@@ -29,17 +29,28 @@
     display: block;
             
             background-color: pink;
-            position: fixed;
-            -webkit-overflow-scrolling: touch;
+
+            
             
             
             }
-         #wrap{ background-color: green; 
+        
+        
+         #wrap{ background-color: #ddd; 
+                 position: absolute;
+/*     z-index: 999; */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
              
-             position: absolute;
-/*                 z-index: 999; */
-                -webkit-transform: translateZ(0);
-                transform: translateZ(0);
+             top: 0;
+    bottom:0;
+    position:fixed;
+    overflow-y:scroll;
+    overflow-x:hidden;
+             
+             
+             
+             -webkit-overflow-scrolling: touch;
              
        
         }
