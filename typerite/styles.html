@@ -19,26 +19,18 @@
             contain: layout size style;
             background-color: blue;
         }
-        .scroll-content{
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            position: absolute;
-            z-index: 1; 
-            display: block;
-            overflow-x: hidden;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
-            will-change: scroll-position;
-            contain: size style layout;
+        .fixed-content{
+                position: absolute;
+/*                 z-index: 999; */
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
             
             
             background-color: pink;
             
             
             }
-         #wrap{width: 80%; height: 80%; overflow: hidden; background-color: red; 
+         #wrap{width: 80%; height: 80%; overflow: hidden; background-color: orange; 
        
         }
         
@@ -54,7 +46,7 @@
     </style>
 </head>
 <body>
-<div class="scroll-content">
+<div class="fixed-content">
     <div id="wrap">
         <div class="content_ver2">
             <section class="kb_sp_main">
