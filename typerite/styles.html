@@ -21,14 +21,15 @@
             overflow-y: scroll;
             -webkit-overflow-scrolling: touch;
             will-change: scroll-position;
-            contain: size style layout;}
+            contain: size style layout;
+            }
          #wrap{width: 100%; height: 100%; overflow: hidden;}
          .content_ver2{height: 100%;}
          .kb_sp_main{height: 100%;}
          .sp_main_wrap{height: 100%;}
          .ui_tab{display: flex; white-space: nowrap; overflow-x: auto; overflow-y: hidden; background: #eee; height: 30px;}
          .ui_tab li{border: 1px solid black; }
-        .tab_content{width: calc(100% - 40px); height: calc(100% - 70px); overflow-y: auto; margin: 20px; border: 1px solid red;}
+        .tab_content{width: calc(100% - 40px); height: calc(100% - 70px); overflow-y: auto; margin: 20px; border: 1px solid red; position: relative; -webkit-transform: translateZ(0);}
 
     </style>
 </head>
@@ -73,7 +74,7 @@
                                         </div>
                                         <div class="txt_box">
                                             <span class="category">생활정보</span>
-                                            <p class="title">아*랑 같이 하는 가치육아11</p>
+                                            <p class="title">아*랑 같이 하는 가치육아ver2</p>
                                         </div>
                                     </a>
                                 </li>
