@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        a{color: inherit; text-decoration: none;}
+        li{list-style: none;}
+        img{display: block;}
+        .ML02_SP{
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            position: absolute;
+            z-index: 1;
+            display: block;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+            will-change: scroll-position;
+            contain: size style layout;}
+         #wrap{width: 100%; height: 100%; overflow: hidden;}
+         .content_ver2{height: 100%;}
+         .kb_sp_main{height: 100%;}
+         .sp_main_wrap{height: 100%;}
+         .ui_tab{display: flex; white-space: nowrap; overflow-x: auto; overflow-y: hidden; background: #eee; height: 30px;}
+         .ui_tab li{border: 1px solid black; }
+        .tab_content{width: calc(100% - 40px); height: calc(100% - 70px); overflow-y: auto; margin: 20px; border: 1px solid red;}
+
+    </style>
+</head>
+<body class="ML02_SP">
+    <div id="wrap">
+        <div class="content_ver2">
+            <section class="kb_sp_main">
+                <div class="sp_main_wrap">
+                    <ul class="ui_tab">
+                        <li class="lst active" ng-reflect-klass="lst" ng-reflect-ng-class="active">
+                            <a class="name" href="javascript:void(0)">최신콘텐츠</a>
+                        </li>
+                        <li class="lst" ng-reflect-klass="lst" ng-reflect-ng-class="">
+                            <a class="name" href="javascript:void(0)">인사말</a>
+                        </li>
+                        <li class="lst" ng-reflect-klass="lst" ng-reflect-ng-class="">
+                            <a class="name" href="javascript:void(0)">생활정보</a>
+                        </li>
+                        <li class="lst" ng-reflect-klass="lst" ng-reflect-ng-class="">
+                            <a class="name" href="javascript:void(0)">니즈환기</a>
+                        </li>
+                        <li class="lst" ng-reflect-klass="lst" ng-reflect-ng-class="">
+                            <a class="name" href="javascript:void(0)">상품정보</a>
+                        </li>
+                        <li class="lst" ng-reflect-klass="lst" ng-reflect-ng-class="">
+                            <a class="name" href="javascript:void(0)">오늘의 좋은글</a>
+                        </li>
+                        <li class="lst" ng-reflect-klass="lst" ng-reflect-ng-class="">
+                            <a class="name" href="javascript:void(0)">기타정보</a>
+                        </li>
+                    </ul>
+                    <div class="tab_content">
+                        <div class="sp_cont_wrap ">
+                            <div class="tit_wrap">
+                                <h3 class="tit_h3">최신 콘텐츠</h3>
+                            </div>
+                            <ul class="kb_cont_card_wrap ">
+                                <li>
+                                    <a class="kb_cont_card" href="javascript:void(0)">
+                                        <div class="thumb_box">
+                                            <img class="thumb" alt="" src="https://mnaistest.kbinsure.co.kr/msp/img/ctts/20/2003/P2003_00079_thum.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="category">생활정보</span>
+                                            <p class="title">아*랑 같이 하는 가치육아</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="kb_cont_card" href="javascript:void(0)">
+                                        <div class="thumb_box">
+                                            <img class="thumb" alt="" src="https://mnaistest.kbinsure.co.kr/msp/img/ctts/20/2003/P2003_00079_thum.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="category">생활정보</span>
+                                            <p class="title">아*랑 같이 하는 가치육아</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="kb_cont_card" href="javascript:void(0)">
+                                        <div class="thumb_box">
+                                            <img class="thumb" alt="" src="https://mnaistest.kbinsure.co.kr/msp/img/ctts/20/2003/P2003_00079_thum.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="category">생활정보</span>
+                                            <p class="title">아*랑 같이 하는 가치육아</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="kb_cont_card" href="javascript:void(0)">
+                                        <div class="thumb_box">
+                                            <img class="thumb" alt="" src="https://mnaistest.kbinsure.co.kr/msp/img/ctts/20/2003/P2003_00079_thum.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="category">생활정보</span>
+                                            <p class="title">아*랑 같이 하는 가치육아</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="kb_cont_card" href="javascript:void(0)">
+                                        <div class="thumb_box">
+                                            <img class="thumb" alt="" src="https://mnaistest.kbinsure.co.kr/msp/img/ctts/20/2003/P2003_00079_thum.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="category">생활정보</span>
+                                            <p class="title">아*랑 같이 하는 가치육아</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="kb_cont_card" href="javascript:void(0)">
+                                        <div class="thumb_box">
+                                            <img class="thumb" alt="" src="https://mnaistest.kbinsure.co.kr/msp/img/ctts/20/2003/P2003_00079_thum.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="category">생활정보</span>
+                                            <p class="title">아*랑 같이 하는 가치육아</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="kb_cont_card" href="javascript:void(0)">
+                                        <div class="thumb_box">
+                                            <img class="thumb" alt="" src="https://mnaistest.kbinsure.co.kr/msp/img/ctts/20/2003/P2003_00079_thum.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="category">생활정보</span>
+                                            <p class="title">아*랑 같이 하는 가치육아</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="kb_cont_card" href="javascript:void(0)">
+                                        <div class="thumb_box">
+                                            <img class="thumb" alt="" src="https://mnaistest.kbinsure.co.kr/msp/img/ctts/20/2003/P2003_00079_thum.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="category">생활정보</span>
+                                            <p class="title">아*랑 같이 하는 가치육아</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="kb_cont_card" href="javascript:void(0)">
+                                        <div class="thumb_box">
+                                            <img class="thumb" alt="" src="https://mnaistest.kbinsure.co.kr/msp/img/ctts/20/2003/P2003_00079_thum.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="category">생활정보</span>
+                                            <p class="title">아*랑 같이 하는 가치육아</p>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="kb_cont_card" href="javascript:void(0)">
+                                        <div class="thumb_box">
+                                            <img class="thumb" alt="" src="https://mnaistest.kbinsure.co.kr/msp/img/ctts/20/2003/P2003_00079_thum.jpg">
+                                        </div>
+                                        <div class="txt_box">
+                                            <span class="category">생활정보</span>
+                                            <p class="title">아*랑 같이 하는 가치육아</p>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="kb_btn_more">
+                                <button class="ng-tns-c3-3" type="button">더보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</body>
+</html>
