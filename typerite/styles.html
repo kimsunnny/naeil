@@ -9,6 +9,15 @@
         a{color: inherit; text-decoration: none;}
         li{list-style: none;}
         img{display: block;}
+        body{
+            left: 0;
+            top: 0;
+            position: absolute;
+            display: block;
+            width: 100%;
+            height: 100%;
+            contain: layout size style;
+        }
         .ML02_SP{
             left: 0;
             right: 0;
@@ -29,11 +38,12 @@
          .sp_main_wrap{height: 100%;}
          .ui_tab{display: flex; white-space: nowrap; overflow-x: auto; overflow-y: hidden; background: #eee; height: 30px;}
          .ui_tab li{border: 1px solid black; }
-        .tab_content{width: calc(100% - 40px); height: calc(100% - 70px); overflow-y: auto; margin: 20px; border: 1px solid blue; position: relative; -webkit-transform: translateZ(0);}
+        .tab_content{width: calc(100% - 40px); height: calc(100% - 70px); overflow-y: auto; margin: 20px; border: 1px solid pink; position: relative; -webkit-transform: translateZ(0);}
 
     </style>
 </head>
-<body class="ML02_SP">
+<body>
+<div class="ML02_SP">
     <div id="wrap">
         <div class="content_ver2">
             <section class="kb_sp_main">
@@ -286,5 +296,6 @@
             </section>
         </div>
     </div>
+</div>
 </body>
 </html>
