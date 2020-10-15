@@ -22,10 +22,10 @@
         .scroll-content{
             left: 0;
             right: 0;
-            top: 0;
+/*             top: 0; */
             bottom: 0;
             position: absolute;
-            z-index: 1;
+/*             z-index: 1; */
             display: block;
             overflow-x: hidden;
             overflow-y: scroll;
@@ -39,17 +39,17 @@
             will-change: auto;
             height: 100%;
             position:fixed;
-            pointer-events: none;
+            
             }
-         #wrap{width: 80%; height: 80%; overflow: hidden; background-color: orange; -webkit-overflow-scrolling: touch; }
+         #wrap{width: 80%; height: 80%; overflow: hidden; background-color: blue; -webkit-overflow-scrolling: touch; }
          .content_ver2{height: 100%;}
          .kb_sp_main{height: 100%;}
          .sp_main_wrap{height: 100%;}
-         .ui_tab{display: flex; white-space: nowrap; overflow-x: auto; overflow-y: hidden; background: #eee; height: 30px; pointer-events: auto;}
+         .ui_tab{display: flex; white-space: nowrap; overflow-x: auto; overflow-y: hidden; background: #eee; height: 30px;}
          .ui_tab li{border: 1px solid black; }
         
         .tab_content{width: calc(100% - 40px); height: calc(100% - 70px); overflow-y: auto; margin: 20px; border: 1px solid #000; 
-            position: relative; -webkit-transform: translateZ(0); z-index: 2; pointer-events: auto;}
+            position: relative; -webkit-transform: translateZ(0); z-index: 2;}
 
     </style>
 </head>
