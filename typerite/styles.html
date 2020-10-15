@@ -40,14 +40,15 @@
             height: 100%;
             position:fixed;
             }
-         #wrap{width: 80%; height: 80%; overflow: hidden; background-color: orange; -webkit-overflow-scrolling: touch; }
+         #wrap{width: 80%; height: 80%; overflow: hidden; background-color: red;  }
          .content_ver2{height: 100%;}
          .kb_sp_main{height: 100%;}
          .sp_main_wrap{height: 100%;}
-         .ui_tab{display: flex; white-space: nowrap; overflow-x: auto; overflow-y: hidden; background: #eee; height: 30px;}
+         .ui_tab{display: flex; white-space: nowrap; overflow-x: auto; overflow-y: hidden; background: #eee; height: 30px; -webkit-overflow-scrolling: touch;}
          .ui_tab li{border: 1px solid black; }
+        
         .tab_content{width: calc(100% - 40px); height: calc(100% - 70px); overflow-y: auto; margin: 20px; border: 1px solid #000; 
-            position: relative; -webkit-transform: translateZ(0); z-index: 2;}
+            position: relative; -webkit-transform: translateZ(0); z-index: 2; -webkit-overflow-scrolling: touch;}
 
     </style>
 </head>
