@@ -20,17 +20,24 @@
             background-color: blue;
         }
         .fixed-content{
-                position: absolute;
-/*                 z-index: 999; */
-                -webkit-transform: translateZ(0);
-                transform: translateZ(0);
-            
+                
+            left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    display: block;
             
             background-color: pink;
             
             
             }
-         #wrap{width: 80%; height: 80%; overflow: hidden; background-color: orange; 
+         #wrap{width: 100%; height: 100%; overflow: hidden; background-color: green; 
+             
+             position: absolute;
+/*                 z-index: 999; */
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
        
         }
         
