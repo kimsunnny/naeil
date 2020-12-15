@@ -20,12 +20,14 @@
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
     <!-- script -->
     <script src="js/jquery-1.12.4.min.js"></script>
-    <script src="js/slick.min.js"></script>
+    <!-- <script src="js/slick.min.js"></script> -->
+    <script src="js/swiper.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/common.js"></script>
 </head>
@@ -77,12 +79,23 @@
 
     <!-- S : visual -->
     <section id="visual">
-        <div class="visual_slide">
-            <!-- <div class="visual visual1"></div> -->
-            <!-- <div class="visual visual2"></div> -->
-            <!-- <div class="visual visual3"></div> -->
-            <div class="visual visual4"></div>
-          </div>
+        <!-- slide -->
+        <div class="swiper-container visual_slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide visual1">
+              </div>
+              <div class="swiper-slide visual2">
+                <div class="visual_text">
+                    <div class="title" data-swiper-parallax="-500">코듀로이 앞머리 라인</div>
+                    <div class="data" data-swiper-parallax="-1000">
+                      <p>오픈 기념 <strong>무료배송</strong> 이벤트!</p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!-- Add Scrollbar -->
+            <div class="swiper-scrollbar"></div>
+        </div>
     </section> 
     <!-- E : visual -->
 

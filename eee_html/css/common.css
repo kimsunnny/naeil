@@ -21,15 +21,17 @@ html{font-size: 62.5%; text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -
 
 
 /* visual */
-#visual{min-width: 32rem; width: 100%; height: 100%; background-color:rgba(0,0,0,0.7); }
+#visual{min-width: 32rem; width: 100%; height: 100%;}
 #visual .visual_slide{width: 100%; height: 100%;}
-#visual .visual_slide .slick-list{width: 100%; height: 100%;}
-#visual .visual_slide .slick-list .slick-track{width: 100%; height: 100%;}
-#visual .visual{position: relative; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center top; background-attachment: fixed;}
-#visual .visual1{background-image: url(../images/visual1.jpg);}
-#visual .visual2{background-image: url(../images/visual2.jpeg);}
+#visual .swiper-slide{background-repeat: no-repeat; background-position: center top;}
+#visual .visual1{background-image: url(../images/visual1.jpg); background-position: left top;}
+#visual .visual2{background-image: url(../images/visual4.jpg);}
 #visual .visual3{background-image: url(../images/visual3.jpg);}
 #visual .visual4{background-image: url(../images/visual4.jpg);}
+#visual .visual_text{position: absolute; left: 2.5rem; top: 50%; transform: translateY(-50%); color: #fff; font-size: 5rem; word-break: keep-all;}
+
+
+
 
 /* footer */
 #footer{padding: 2.5rem;}
