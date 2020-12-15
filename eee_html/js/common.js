@@ -9,19 +9,19 @@ $(document).ready(function(){
     });
 
     //gnb
-//     $('.header_menu_toggle').on('click',function(){
-//         var _window= $(window).width();
-//         if(_window>960){return}
-//         $(this).toggleClass('on')
-//         if($(this).hasClass('on')){
-//             $(this).addClass('on');
-//             alert('open')
-//         }else{
-//             $(this).siblings('.sub').slideUp('fast');
-//             if(_window>960){return }
-//             $(this).toggleClass('on')
+    // $('.header_menu_toggle').on('click',function(){
+    //     var _window= $(window).width();
+    //     if(_window>960){return}
+    //     $(this).toggleClass('on')
+    //     if($(this).hasClass('on')){
+    //         $(this).addClass('on');
+    //         alert('open')
+    //     }else{
+    //         $(this).siblings('.sub').slideUp('fast');
+    //         if(_window>960){return }
+    //         $(this).toggleClass('on')
             
-    })
+    // })
 
     /*
     //더보기
