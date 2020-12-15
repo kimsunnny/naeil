@@ -11,7 +11,7 @@ html{font-size: 62.5%; text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -
 
 /* header */
 #header{position: fixed; top: 0; left: 0; right: 0; z-index: 9; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 2.5rem;}
-#header .header_logo h1::after{content: 'eee design project.'; display: block; font-size: 1.2rem; font-weight: 300; color: #000;}
+#header .header_logo h1::after{content: '에에에 디자인 프로젝트.'; display: block; font-size: 1.15rem; font-weight: 300; color: #000; letter-spacing: -0.025rem;}
 #header .header_nav_wrap ul{background-color: #fff;; position: absolute; top: 0; right: 0; width: 45%; height: 100vh; display: none;}
 #header .header_nav_wrap .nav_dim{position: absolute; left: 0; top: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.7); z-index: -1; display: none;}
 #header .header_nav_wrap ul{padding: 2.5rem;}
@@ -21,8 +21,11 @@ html{font-size: 62.5%; text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -
 
 
 /* visual */
-#visual{min-width: 32rem;}
-#visual .visual{width: 100%; height: 100vh; background-repeat: no-repeat; background-position: center top;}
+#visual{min-width: 32rem; width: 100%; height: 100%; background-color:rgba(0,0,0,0.7); }
+#visual .visual_slide{width: 100%; height: 100%;}
+#visual .visual_slide .slick-list{width: 100%; height: 100%;}
+#visual .visual_slide .slick-list .slick-track{width: 100%; height: 100%;}
+#visual .visual{position: relative; width: 100%; height: 100%; background-repeat: no-repeat; background-position: center top; background-attachment: fixed;}
 #visual .visual1{background-image: url(../images/visual1.jpg);}
 #visual .visual2{background-image: url(../images/visual2.jpeg);}
 #visual .visual3{background-image: url(../images/visual3.jpg);}
