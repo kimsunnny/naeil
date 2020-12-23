@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* common */
-html,body{height: 100%; }
+html,body{height: 100%;}
 
 /* main visual */
 #visual{min-width: 32rem; width: 100%; height: 100%;}
