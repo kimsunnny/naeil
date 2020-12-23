@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+/* product */
+#product ul{display: flex; flex-wrap: wrap; justify-content: center;}
+#product ul li{width: 44%; margin:2%; font-size: 1.2rem;}
+#product ul li p{padding: 5px; line-height: 1.5;}
+#product ul li a{display: block;}
+#product ul li a .img_wrap{overflow: hidden;}
+#product ul li a img{display: block; transition: all .5s;}
+#product ul li a:hover img{transform: scale(1.1);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
