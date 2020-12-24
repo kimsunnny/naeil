@@ -16,23 +16,22 @@ section:not(#visual) ~ footer{padding-top: 5rem; border-top: 1px solid #eee;}
 
 /* header */
 #header{position: fixed; top: 0; left: 0; right: 0; z-index: 9; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 2.5rem; z-index: 99;}
-#header h1{font-size: 1.2rem; font-weight: 300; color: #000; letter-spacing: -0.023rem;}
+#header h1{font-size: 1.2rem; font-weight: 300; color: #000; letter-spacing: -0.023rem; line-height: 1;}
 #header .header_nav_wrap .nav_wrap{background-color: #fff;; position: absolute; top: 0; right: -100%; width: 60%; height: 100vh; padding: 6.5rem 0; transition: all .2s;}
-#header .header_nav_wrap .nav_wrap svg{position: absolute; bottom: 2.5rem; right: 2.5rem;}
+#header .header_nav_wrap .nav_wrap svg{position: absolute; right: 2.5rem; margin-top: 2.5rem;}
 #header .header_nav_wrap .nav_wrap > li{border-bottom: 1px solid #eee;}
 #header .header_nav_wrap .nav_wrap a{display: block; padding: 1rem 2.5rem;}
 #header .header_nav_wrap .nav_wrap .lnb{background-color: #f6f6f6; display: none;}
 #header .header_nav_wrap .nav_wrap .lnb a{padding-left: 4rem;}
 #header .header_nav_wrap .nav_wrap .lnb a:hover{color: #004ea1;}
 #header .header_nav_wrap .nav_wrap .lnb a strong{font-weight: 400;}
-#header .header_nav_wrap .nav_dim{position: absolute; left: 0; top: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.75); z-index: -1; transition: all .3s;display: none;}
-#header .header_menu_toggle{padding: 0 1rem; position: absolute; top: 3.1rem; right: 2.5rem; transition: all .3s;}
+#header .header_nav_wrap .nav_dim{position: absolute; left: 0; top: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.75); z-index: -1; transition: all .3s; display: none;}
+#header .header_menu_toggle{padding: 0 1rem; position: absolute; top: 3.1rem; right: 2.5rem; transition: all .3s; cursor: pointer;}
 #header .header_menu_toggle span{display: block; width: 2rem; height: 1px; background-color: #000; margin: 0.6rem 0; transition: all .3s;}
 /* header menu_on */
-body.menu_on{overflow-y: hidden;}
 body.menu_on #header .header_nav_wrap .nav_wrap{right: 0;}
 body.menu_on #header .header_nav_wrap .nav_dim{display: block;}
-body.menu_on #header .header_menu_toggle{transform: rotate(45deg) translateX(-10px) translateY(10px);}
+body.menu_on #header .header_menu_toggle{transform: rotate(45deg);}
 body.menu_on #header .header_menu_toggle span:nth-of-type(1){transform: translateY(6px);}
 body.menu_on #header .header_menu_toggle span:nth-of-type(2){width: 0; transition: none;}
 body.menu_on #header .header_menu_toggle span:nth-of-type(3){transform: translateY(-8px) rotate(90deg);}

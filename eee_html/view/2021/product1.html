@@ -17,15 +17,15 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="shortcut icon" href="favicon.ico">
     <!-- css -->
-    <link rel="stylesheet" href="../css/swiper.min.css">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/product.css">
+    <link rel="stylesheet" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="../../css/view.css">
     <!-- script -->
-    <script src="../js/jquery-1.12.4.min.js"></script>
-    <script src="../js/swiper.min.js"></script>
-    <script src="../js/plugins.js"></script>
-    <script src="../js/common.js"></script>
+    <script src="../../js/jquery-1.12.4.min.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/plugins.js"></script>
+    <script src="../../js/common.js"></script>
 </head>
 
 <body>
@@ -38,7 +38,7 @@
     <!-- S : header -->
     <header id="header">
         <div class="header_logo">
-            <a href="../index.html">
+            <a href="../../index.html">
                 <h1>
                     <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                     y="0px" width="94px" height="25px" viewBox="0 0 246.38 65.296" enable-background="new 0 0 246.38 65.296"
@@ -62,20 +62,20 @@
                 <li>
                     <a href="#n" class="gnb">product</a>
                     <ul class="lnb">
-                        <li><a href="../product/all_list.html"><strong>all</strong></a></li>
-                        <li><a href="../product/bag_list.html">bag</a></li>
-                        <li><a href="../product/pouch_list.html">pouch</a></li>
-                        <li><a href="../product/apparel_list.html">apparel</a></li>
+                        <li><a href="../../product/all_list.html"><strong>all</strong></a></li>
+                        <li><a href="../../product/bag_list.html">bag</a></li>
+                        <li><a href="../../product/pouch_list.html">pouch</a></li>
+                        <li><a href="../../product/apparel_list.html">apparel</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#n" class="gnb">lookbook</a>
                     <ul class="lnb">
-                        <li><a href="../lookbook/2021.html"><strong>2021</strong></a></li>
+                        <li><a href="../../lookbook/2021.html"><strong>2021</strong></a></li>
                     </ul>
                 </li>
-                <li><a href="../about/about.html" class="gnb">about</a></li>
-                <li><a href="../notice/notice.html" class="gnb">notice</a></li>	
+                <li><a href="../../about/about.html" class="gnb">about</a></li>
+                <li><a href="../../notice/notice.html" class="gnb">notice</a></li>	
                 <svg version="1.1" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                     y="0px" width="94px" height="24px" viewBox="0 0 246.38 65.296" enable-background="new 0 0 246.38 65.296"
                     xml:space="preserve">
@@ -91,27 +91,46 @@
             </ul>
             <div class="nav_dim"></div>
         </nav>
-        <a class="header_menu_toggle" href="#">
+        <button class="header_menu_toggle">
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
-        </a>
+        </button>
     </header>
     <!-- E : header -->
 
     <!-- S : product -->
-    <section id="product">
-        <h2 class="cm_tit">apparel</h2>
-        <ul>
-            <li>
-                <a href="../view/2021/product4.html">
-                    <div class="img_wrap">
-                        <img src="../images/product1.png" alt="제품4">
-                    </div>
-                    <p>옷 ver1<br>Whale blue corduroy<br>₩ 39,000</p>
-                </a>
-            </li>
-        </ul>
+    <section id="view">
+        
+        <div class="cm_inner">
+            <h2 class="tit">[Bag] UpsideDown Bag ver.1</h2>
+            <!-- slide -->
+        <div class="swiper-container view_slide">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide view1 empty">
+                <!-- <img src="../../images/product1.png" alt=""> -->
+                <span>상품 준비 중</span>
+              </div>
+            </div>
+        </div>
+        <p class="price">KRW 109,000</p>
+            <p class="desc">
+                - 탄탄한 울 소재의 H라인의 스커트  <br>
+                - 조직감이 느껴지는 고급스러운 원단<br>
+                - 빈티지한 버튼 디테일<br><br>
+                +SIZE AND FIT<br>
+                S size 허리 33cm힙 44cm 총장 75cm<br>
+                M size 허리 35cm힙 47cm 총장 76cm<br>
+                <br>
+                +COMPOSITION<br>
+                wool 100%<br>
+                *12/1 pm1:00 - 3rd open<br>
+                배송일정 12/11일부터 순차배송<br><br>
+            </p>
+            <a href="#n" class="btn_buy">Buy Now</a>
+            <img src="../../images/bag1_detail.jpg" alt="">
+        </div>
+        
     </section> 
     <!-- E : product -->
 

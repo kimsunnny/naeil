@@ -1,28 +1,15 @@
 $(document).ready(function(){
-  MobileGnb();
-  MobileLnb();
+  MobileGnb(); //모바일 메뉴 gnb
+  MobileLnb(); //모바일 메뉴 lnb
   if( $('#visual').length > 0 ){
 		MainSlide(); // main visual
+  }
+  if( $('#view').length > 0 ){
+		ViewSlide(); // main visual
 	}
-  if( $('#info').length > 0 ){
+  if( $('#notice').length > 0 ){
 		InfoAccordion(); // info accordion
 	}
-
-    //swiper 메인 비주얼
-    function MainSlide(){
-      var swiper = new Swiper('.swiper-container.visual_slide', {
-        hashNavigation: {
-          watchState: true,
-        },
-        autoplay: {
-          delay: 3500,
-          disableOnInteraction: false,
-        },
-        speed: 800,
-        parallax: true,
-        loop: true,
-      });
-    }
     
     //모바일 메뉴 gnb
     function MobileGnb(){
@@ -65,6 +52,37 @@ $(document).ready(function(){
          }
        })
     }
+
+    //swiper 메인 비주얼
+    function MainSlide(){
+      var swiper = new Swiper('.swiper-container.visual_slide', {
+        hashNavigation: {
+          watchState: true,
+        },
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        speed: 800,
+        parallax: true,
+        loop: true,
+      });
+    }
+
+    //swiper 상세페이지
+    function ViewSlide(){
+      var swiper = new Swiper('.swiper-container.view_slide', {
+        hashNavigation: {
+          watchState: true,
+        },
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        speed: 800,
+        loop: true,
+      });
+    }
      
     //info 아코디언 게시글
     function InfoAccordion() {
@@ -74,7 +92,7 @@ $(document).ready(function(){
         $(this).toggleClass('active').siblings().removeClass('active');
       });
     }
-    
+
 })
 
 

@@ -40,7 +40,7 @@ ul,ol {list-style:none;}
 blockquote, q{quotes:none;}
 table{border-collapse: collapse; border-spacing: 0;}
 input,select{vertical-align: middle; border: 0; outline: 0; appearance:none; border-radius: 0;}
-button{border: 0; outline: 0; cursor: pointer;}
+button{border: 0; outline: 0; cursor: pointer; background: none;}
 .clearfix::before{content:''; display:block;}
 .clearfix::after{content:''; display:block; clear:both;}
 *,*::after, *::before{box-sizing: border-box; }
