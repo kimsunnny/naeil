@@ -1,25 +1,14 @@
 @charset "utf-8";
 
 /* notice */
-
-/* 자주묻는질문 */
-.faq_list ul{border-top:1px solid #ebebeb; margin-top: 50px;}
-.faq_list li{border-bottom:1px solid #ebebeb; cursor:pointer;}
-.faq_list .q_box{position:relative; padding:15px 0; font-size:15px; color:#333; line-height:20px;}
-.faq_list .q_box:after{content:''; position:absolute; right:20px; top:50%; width:17px; height:10px; margin-top:-5px; background:url(../images/icon_arrow_spr.png) no-repeat 0 0; background-size:17px auto;}
-.faq_list .a_box{padding:15px 20px; background:#f5f5f5; border-top:1px solid #ebebeb; font-weight:300; color:#656565; line-height:20px; word-break:keep-all; display:none;}
-.faq_list .a_box > *{font-weight:300; color:#656565; line-height:20px;}
-.faq_list .active .q_box{font-weight:500; color:#286edd;}
-.faq_list .active .q_box:after{background-position:0 -10px;}
-.faq_list .active .a_box{display:block;}
-
-.faq_list strong{font-weight: 400; margin-right: 10px;}
-
-
-
-
-
-
+#notice .notice_list ul{border-top:1px solid #ebebeb; margin-top: 5rem;}
+#notice .notice_list li{border-bottom:1px solid #ebebeb; cursor:pointer;}
+#notice .notice_list .t_box{position:relative; padding:1.5rem 5rem 1.5rem 0; font-size: 1.5rem;}
+#notice .notice_list .t_box strong{font-size:1.1rem; font-weight: 400; margin-right: 1rem; vertical-align: middle;}
+#notice .notice_list .t_box:after{content:''; position:absolute; right:2rem; top:50%; width:1.7rem; height:0.9rem; margin-top:-0.45rem; background:url(../images/icon_arrow_spr.png) no-repeat 0 0; background-size:1.7rem auto;}
+#notice .notice_list .c_box{padding:1.5rem 2rem; background:#f5f5f5; border-top:1px solid #ebebeb; color:#656565; display:none;}
+#notice .notice_list .active .t_box{font-weight:400; color:#286edd;}
+#notice .notice_list .active .t_box:after{background-position:0 -0.9rem;}
 
 
 

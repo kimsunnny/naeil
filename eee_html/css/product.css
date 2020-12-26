@@ -2,25 +2,20 @@
 
 /* product */
 #product ul{display: flex; flex-wrap: wrap; justify-content: space-between;}
-#product ul li{width: 46%; font-size: 1.2rem;}
+#product ul li{width: 46%; margin-bottom: 3rem; border: 1px solid #eee;}
 #product ul li:nth-child(even){margin-right: 2.5%; margin-left: 1.5%;}
 #product ul li:nth-child(odd){margin-left: 2.5%; margin-right: 1.5%;}
-#product ul li p{padding: 5px; line-height: 1.5;}
 #product ul li a{display: block;}
 #product ul li a .img_wrap{overflow: hidden;}
-#product ul li a img{display: block; transition: all .5s;}
-#product ul li a:hover img{transform: scale(1.1);}
+#product ul li a .img_wrap img{display: block; transition: all .5s;}
+#product ul li a:hover .img_wrap img{transform: scale(1.1);}
+#product ul li a .txt_wrap{padding: 1rem 0.5rem;}
+#product ul li a .txt_wrap p:nth-of-type(2){font-size: 1.2rem; margin-bottom: 1rem;}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+#product ul .empty .img_wrap{background: #eee; width: 100%; padding-top: 100%; text-align: center; position: relative;}
+#product ul .empty .img_wrap span{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+#product ul .soldout .img_wrap{position: relative;}
+#product ul .soldout .img_wrap img{opacity: 0.5;}
+#product ul .soldout .img_wrap span{position: absolute; right: 0; top: 0; background: #bbb; color: #fff; padding: 0.5rem 1rem;}
+#product ul .sale .img_wrap{position: relative;}
+#product ul .sale .img_wrap span{position: absolute; right: 0; top: 0; background: #000; color: #fff; font-weight: 400; padding: 0.5rem 1rem;}

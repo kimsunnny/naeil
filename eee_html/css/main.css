@@ -12,3 +12,4 @@ html,body{height: 100%;}
 #visual .visual3{background-image: url(../images/visual3.jpg);}
 #visual .visual4{background-image: url(../images/visual4.jpg);}
 #visual .visual_text{position: absolute; left: 2.5rem; top: 50%; transform: translateY(-50%); color: #fff; font-size: 5rem; word-break: keep-all;}
+#visual .visual_text{line-height: 1.2;}

@@ -86,9 +86,9 @@ $(document).ready(function(){
      
     //info 아코디언 게시글
     function InfoAccordion() {
-      $('.faq_list li').on('click', function(){
-        $(this).siblings().find('.a_box').slideUp(300);
-        $(this).find('.a_box').slideToggle(300);
+      $('.notice_list li').on('click', function(){
+        $(this).siblings().find('.c_box').slideUp(300);
+        $(this).find('.c_box').slideToggle(300);
         $(this).toggleClass('active').siblings().removeClass('active');
       });
     }

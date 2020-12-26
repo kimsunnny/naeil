@@ -1,9 +1,13 @@
 @charset "utf-8";
 
-/*web font*/
+/* ---------------------------------
+web font
+--------------------------------- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/* common */
+/* ---------------------------------
+common
+--------------------------------- */
 html,body{font-family: 'Roboto', sans-serif; font-weight: 300; font-size: 1.4rem; line-height: 1.5; color: #fff; width: 100%; margin: 0 auto; color: #222; text-size-adjust: none; -webkit-text-size-adjust: none; -moz-text-size-adjust: none; -ms-text-size-adjust: none; word-break: keep-all;}
 html{font-size: 62.5%; text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 section:not(#visual){margin-top: 9rem; padding-bottom: 5rem;}
@@ -11,11 +15,14 @@ section:not(#visual) ~ footer{padding-top: 5rem; border-top: 1px solid #eee;}
 .cm_hidden{position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); border: 0;}
 .cm_tit{font-size: 2.5rem; font-weight: 600; text-align: center; padding: 2rem 0 3rem;}
 .cm_desc{font-size: 1.2rem; text-align: center;}
-.cm_through{text-decoration: line-through; margin-right: 1rem; color: #bbb;}
+.cm_bf_price{text-decoration: line-through; margin-right: 1rem; color: #bbb;}
 .cm_inner{padding: 2.5rem;}
 
-/* header */
+/* ---------------------------------
+header
+--------------------------------- */
 #header{position: fixed; top: 0; left: 0; right: 0; z-index: 9; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 2.5rem; z-index: 99;}
+#header .header_logo svg{height: auto;}
 #header h1{font-size: 1.2rem; font-weight: 300; color: #000; letter-spacing: -0.023rem; line-height: 1;}
 #header .header_nav_wrap .nav_wrap{background-color: #fff;; position: absolute; top: 0; right: -100%; width: 60%; height: 100vh; padding: 6.5rem 0; transition: all .2s;}
 #header .header_nav_wrap .nav_wrap svg{position: absolute; right: 2.5rem; margin-top: 2.5rem;}
@@ -28,7 +35,10 @@ section:not(#visual) ~ footer{padding-top: 5rem; border-top: 1px solid #eee;}
 #header .header_nav_wrap .nav_dim{position: absolute; left: 0; top: 0; width: 100%; height: 100vh; background: rgba(0,0,0,0.75); z-index: -1; transition: all .3s; display: none;}
 #header .header_menu_toggle{padding: 0 1rem; position: absolute; top: 3.1rem; right: 2.5rem; transition: all .3s; cursor: pointer;}
 #header .header_menu_toggle span{display: block; width: 2rem; height: 1px; background-color: #000; margin: 0.6rem 0; transition: all .3s;}
-/* header menu_on */
+
+/* ---------------------------------
+header addclass menu_on
+--------------------------------- */
 body.menu_on #header .header_nav_wrap .nav_wrap{right: 0;}
 body.menu_on #header .header_nav_wrap .nav_dim{display: block;}
 body.menu_on #header .header_menu_toggle{transform: rotate(45deg);}
@@ -36,12 +46,39 @@ body.menu_on #header .header_menu_toggle span:nth-of-type(1){transform: translat
 body.menu_on #header .header_menu_toggle span:nth-of-type(2){width: 0; transition: none;}
 body.menu_on #header .header_menu_toggle span:nth-of-type(3){transform: translateY(-8px) rotate(90deg);}
 
-/* footer */
+/* ---------------------------------
+footer
+--------------------------------- */
 #footer{padding: 2.5rem;}
 #footer p{font-size: 1.1rem;}
 
+/* ---------------------------------
+반응형 CSS
+--------------------------------- */
 
-/* keyframes */
+/* 태블릿 */
+@media screen and (min-width: 760px){
+    #header .header_logo svg{width: 11rem;}
+    #header h1{font-size: 1.4rem;}
+    #header .header_menu_toggle{transform: scale(1.2)}
+    body.menu_on #header .header_menu_toggle{transform: scale(1.2) rotate(45deg);}
+}
+
+/* 노트북 */
+@media screen and (min-width: 1200px){
+    
+}
+
+/* 데스크탑 */
+@media screen and (min-width: 1900px){
+    
+}
+
+
+
+/* ---------------------------------
+keyframes
+--------------------------------- */
 @keyframes move_item1 {
     0%, 100% {transform: translate(0, 0)}
     50% {transform: translate(-10px, -10px);}
@@ -50,3 +87,32 @@ body.menu_on #header .header_menu_toggle span:nth-of-type(3){transform: translat
     0%, 100% {transform: translate(0, 0)}
     50% {transform: translate(-10px, -10px);}
 }
+
+
+/* ---------------------------------
+공통 폰트 사이즈
+
+많이 작게 1.1rem
+조금 작게 1.2rem
+
+기본 폰트 1.4rem
+
+조금 크게 1.5rem
+많이 크게 1.6rem
+
+왕 크게 (상단 타이틀) 2.5rem
+왕 조금 크게 (어바웃 타이틀) 3rem
+왕왕 크게 (비주얼 타이틀) 5rem
+
+
+공통 여백 사이즈
+
+기본 여백 (inner) 2.5rem
+큰 여백 10rem
+중간 여백 5rem
+
+--------------------------------- */
+
+
+
+
