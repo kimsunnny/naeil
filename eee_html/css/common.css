@@ -27,7 +27,7 @@ header
 #header .header_logo svg{height: auto;}
 /* IE9,10 */
 @media screen and (min-width:0\0){
-    #header .header_logo svg{max-height: 3.5rem;}
+    #header .header_logo svg{max-height: 3.2rem;}
 } 
 #header h1{font-size: 1.2rem; font-weight: 300; color: #000; letter-spacing: -0.023rem; line-height: 1;}
 #header .header_nav_wrap .nav_wrap{background-color: #fff;; position: absolute; top: 0; right: -100%; width: 50%; height: 100vh; padding: 6.5rem 0; transition: all .1s;}
