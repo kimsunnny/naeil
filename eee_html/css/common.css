@@ -25,8 +25,12 @@ header
 #header{position: fixed; top: 0; left: 0; right: 0; z-index: 9; padding: 2.5rem; z-index: 99; display: flex; flex-wrap: wrap;}
 #header .header_logo a{display: block;}
 #header .header_logo svg{height: auto;}
+/* IE9,10 */
+@media screen and (min-width:0\0){
+    #header .header_logo svg{max-height: 3.5rem;}
+} 
 #header h1{font-size: 1.2rem; font-weight: 300; color: #000; letter-spacing: -0.023rem; line-height: 1;}
-#header .header_nav_wrap .nav_wrap{background-color: #fff;; position: absolute; top: 0; right: -100%; width: 60%; height: 100vh; padding: 6.5rem 0; transition: all .1s;}
+#header .header_nav_wrap .nav_wrap{background-color: #fff;; position: absolute; top: 0; right: -100%; width: 50%; height: 100vh; padding: 6.5rem 0; transition: all .1s;}
 #header .header_nav_wrap .nav_wrap svg{position: absolute; right: 2.5rem; margin-top: 2.5rem;}
 #header .header_nav_wrap .nav_wrap > li{border-bottom: 1px solid #eee;}
 #header .header_nav_wrap .nav_wrap a{display: block; padding: 1rem 2.5rem;}
@@ -83,6 +87,8 @@ footer
     #header .header_menu_toggle{display: none;}
     #header.on{background-color: rgba(255,255,255,0.5)}
     #footer ul{display: flex; flex-wrap: wrap; justify-content: space-evenly}
+    #footer ul li{width: 33.3333%; text-align: center;}
+    #footer ul li p{display: inline-block; text-align: left;}
 }
 
 /* 11인치 이상 1024 */

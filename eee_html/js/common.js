@@ -7,9 +7,9 @@ $(document).ready(function(){
   if( $('#visual').length > 0 ){
 		MainSlide(); // main visual
   }
-  if( $('#view').length > 0 ){
-		ViewSlide(); // main visual
-	}
+  //if( $('#view').length > 0 ){
+	//	ViewSlide(); // view visual
+	//}
   if( $('#notice').length > 0 ){
 		InfoAccordion(); // info accordion
 	}
@@ -89,7 +89,7 @@ $(document).ready(function(){
     }
 
     //swiper 상세페이지
-    function ViewSlide(){
+    //function ViewSlide(){
       var swiper = new Swiper('.swiper-container.view_slide', {
         hashNavigation: {
           watchState: true,
@@ -101,7 +101,7 @@ $(document).ready(function(){
         speed: 800,
         loop: true,
       });
-    }
+    //}
      
     //info 아코디언 게시글
     function InfoAccordion() {
