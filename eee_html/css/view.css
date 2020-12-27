@@ -1,17 +1,51 @@
 @charset "utf-8";
 
 /* view */
-#view  .view_slide{margin: 4rem 0;}
-#view .tit{font-size: 2.5rem; margin: 2rem 0;}
-#view .price{margin: 1rem 0;}
-#view .desc{margin-top: 5rem;}
-#view .btn_buy{border: 1px solid #eee; padding: 1rem; display: block; text-align: center; margin: 4rem 0; font-weight: 600;}
-#view .empty{background: #eee; width: 100%; padding-top: 50%; text-align: center; position: relative;;}
+#view .cm_tit{text-align: left;}
+#view .top_wrap{display: flex; flex-wrap: wrap; border-top: 1px solid #eee; border-bottom: 1px solid #eee; padding: 3rem 0;}
+#view .top_wrap > div{width: 100%;}
+#view .top_wrap .right .price{font-weight: 600; margin-bottom: 2rem; margin-top: 5rem;}
+#view .top_wrap .right .desc{margin: 5rem 0;}
+#view .top_wrap .right .btn_buy{border: 1px solid #eee; padding: 1rem; display: block; text-align: center; font-weight: 600; margin: 2rem 0;}
+#view .cm_inner > .desc{margin: 5rem 0;}
+#view .cm_inner > img{display: block; margin: 0 auto;}
+#view .empty{background: #eee; width: 100%; padding-top: 50%; text-align: center; position: relative;}
 #view .empty span{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
 
 
+/* 태블릿 */
+@media screen and (min-width: 760px){
+    #view .top_wrap > div{width: 50%;}
+    #view .top_wrap .right{display: flex; flex-direction: column; justify-content: space-evenly; padding-left: 2.5rem;}
+    #view .top_wrap .right .price{margin-top: 0;}
+    #view .top_wrap .right .desc{margin: 3rem 0;}
+    #view .top_wrap .right .btn_buy{margin-bottom: 0;}
+}
 
+/* pc 960 */
+@media screen and (min-width: 960px){
+    
+}
 
+/* 11인치 이상 1024 */
+@media screen and (min-width: 1000px){
+
+}
+
+/* 12인치 이상 1280 */
+@media screen and (min-width: 1260px){
+    #view .top_wrap .right{padding-left: 3.5rem;}
+}
+
+/* 14인치 이상 1600 */
+@media screen and (min-width: 1580px){
+
+}
+
+/* 13인치 이상 1920 */
+@media screen and (min-width: 1900px){
+
+}
 
 
 

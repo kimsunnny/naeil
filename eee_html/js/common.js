@@ -1,6 +1,9 @@
 $(document).ready(function(){
   MobileGnb(); //모바일 메뉴 gnb
   MobileLnb(); //모바일 메뉴 lnb
+  MobileMenuResize(); //사이즈조정시 메뉴 원복
+  PcGnb(); //pc 메뉴 gnb
+
   if( $('#visual').length > 0 ){
 		MainSlide(); // main visual
   }
@@ -52,6 +55,22 @@ $(document).ready(function(){
          }
        })
     }
+
+    //pc 메뉴 gnb
+    function PcGnb(){
+      $('.nav_wrap > li').mouseenter(function(){
+        var WindowWidth = $(window).width();
+        if(WindowWidth < 960){return}
+        $('.lnb').stop().slideDown(300);
+        $('#header').addClass('on');
+      }).mouseleave(function(){
+        var WindowWidth = $(window).width();
+          if(WindowWidth < 960){return }
+          $('.lnb').stop().slideUp(300);
+          $('#header').removeClass('on');
+      })
+    }
+    
 
     //swiper 메인 비주얼
     function MainSlide(){
